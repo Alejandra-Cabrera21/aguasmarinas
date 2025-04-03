@@ -8,6 +8,7 @@ const Blog = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const base = import.meta.env.BASE_URL;
+
   const images = [
     "salina1.jpg", "salina2.jpg", "salina3.jpg", "salina4.jpg",
     "salina5.jpg", "salina6.jpg", "salina7.jpg", "salina8.jpg",
@@ -21,17 +22,17 @@ const Blog = () => {
   ].map(v => base + "videos/" + v);
 
   const productos = [
-    { img: "sal-industrial.jpg", alt: "Sal Industrial", title: "Sal Industrial", desc: "La sal industrial...", link: "/productos/sal-industrial" },
-    { img: "sal-blanca-yodada.jpg", alt: "Sal Blanca Yodada", title: "Sal Blanca Yodada", desc: "La sal blanca yodada...", link: "/productos/sal-blanca-yodada" },
-    { img: "sal-ganado.jpg", alt: "Sal de Ganado", title: "Sal de Ganado", desc: "Esta sal es esencial...", link: "/productos/sal-ganado" },
-    { img: "sal-blanca-yodada.jpg", alt: "Sal Refinada Tipo B", title: "Sal Refinada Tipo B", desc: "Una opción perfecta...", link: "/productos/sal-refinada-tipo-b" },
-    { img: "sal-la-finaa.png", alt: "Sal Refinada La Fina", title: "Sal Refinada 'La Fina'", desc: "Con una textura más fina...", link: "/productos/sal-refinada-la-fina" },
+    { img: "sal-industrial.jpg", alt: "Sal Industrial", title: "Sal Industrial", desc: "La sal industrial es utilizada en múltiples aplicaciones...", link: "/productos/sal-industrial" },
+    { img: "sal-blanca-yodada.jpg", alt: "Sal Blanca Yodada", title: "Sal Blanca Yodada", desc: "La sal blanca yodada es ideal para el consumo humano...", link: "/productos/sal-blanca-yodada" },
+    { img: "sal-ganado.jpg", alt: "Sal de Ganado", title: "Sal de Ganado", desc: "Esta sal es esencial para el bienestar del ganado...", link: "/productos/sal-ganado" },
+    { img: "sal-refinada-b.jpg", alt: "Sal Refinada Tipo B", title: "Sal Refinada Tipo B", desc: "Una opción perfecta para cocina e industria...", link: "/productos/sal-refinada-tipo-b" },
+    { img: "sal-la-finaa.png", alt: "Sal Refinada La Fina", title: "Sal Refinada 'La Fina'", desc: "Con una textura más fina y mayor solubilidad...", link: "/productos/sal-refinada-la-fina" },
   ];
 
   return (
     <div className="blog-container">
       <h1>Últimas noticias de AguasMarinas</h1>
-      <p>Descubre los beneficios...</p>
+      <p>Descubre los beneficios y usos de cada tipo de sal que ofrecemos.</p>
 
       {productos.map((item, index) => (
         <div className="blog-section" key={index}>
@@ -39,15 +40,17 @@ const Blog = () => {
           <div className="blog-text">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <Link to={item.link}><button className="view-store-button">Ver en Tienda</button></Link>
+            <Link to={item.link}>
+              <button className="view-store-button">Ver en Tienda</button>
+            </Link>
           </div>
         </div>
       ))}
 
       <div className="blog-section">
         <div className="blog-text">
-          <h2>Proceso de Producción...</h2>
-          <button onClick={() => setShowGallery(!showGallery)}>
+          <h2>Proceso de Producción en Nuestras Salinas</h2>
+          <button className="accordion-buttonblog" onClick={() => setShowGallery(!showGallery)}>
             {showGallery ? "Ocultar Imágenes" : "Ver Imágenes"}
           </button>
         </div>
@@ -56,21 +59,24 @@ const Blog = () => {
       {showGallery && (
         <div className="salina-gallery">
           <div className="salina-image-container">
-            <button onClick={() => setCurrentImage((currentImage - 1 + images.length) % images.length)}>←</button>
-            <img className="salina-img" src={images[currentImage]} alt="Salina" />
-            <button onClick={() => setCurrentImage((currentImage + 1) % images.length)}>→</button>
+            <button className="arrow-button" onClick={() => setCurrentImage((currentImage - 1 + images.length) % images.length)}>←</button>
+            <img className="salina-img" src={images[currentImage]} alt={`Salina ${currentImage + 1}`} />
+            <button className="arrow-button" onClick={() => setCurrentImage((currentImage + 1) % images.length)}>→</button>
           </div>
         </div>
       )}
 
       <div className="blog-section video-section">
-        <h5>Videos del Proceso...</h5>
+        <h5>Videos del Proceso de Producción</h5>
         <div className="video-containerBLOG">
-          <button onClick={() => setCurrentVideo((currentVideo - 1 + videos.length) % videos.length)}>←</button>
-          <video key={currentVideo} width="100%" controls autoPlay muted loop>
-            <source src={videos[currentVideo]} type="video/mp4" />
-          </video>
-          <button onClick={() => setCurrentVideo((currentVideo + 1) % videos.length)}>→</button>
+          <button className="arrow-buttonBLOG left-arrowBLOG" onClick={() => setCurrentVideo((currentVideo - 1 + videos.length) % videos.length)}>←</button>
+          <div className="video-wrapper">
+            <video key={currentVideo} width="100%" controls autoPlay muted loop>
+              <source src={videos[currentVideo]} type="video/mp4" />
+              Tu navegador no soporta la reproducción de videos.
+            </video>
+          </div>
+          <button className="arrow-buttonBLOG right-arrowBLOG" onClick={() => setCurrentVideo((currentVideo + 1) % videos.length)}>→</button>
         </div>
       </div>
     </div>
