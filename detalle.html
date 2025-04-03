@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { width: 50%; margin: auto; padding: 20px; border: 1px solid #ddd; }
+        img { width: 100%; height: auto; }
+        .button { padding: 10px; margin-top: 10px; display: block; text-decoration: none; color: white; }
+        .whatsapp { background-color: #25D366; }
+        .email { background-color: #007bff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="productImage" src="" alt="Producto">
+        <h1 id="productName">Nombre del Producto</h1>
+        <p id="productPresentation">Presentación</p>
+        <p id="productDescription">Descripción</p>
+        <a id="whatsappButton" href="#" class="button whatsapp">Cotizar por WhatsApp</a>
+        <a id="emailButton" href="#" class="button email">Cotizar por Correo</a>
+    </div>
+
+    <script>
+        function loadProductDetails() {
+            const params = new URLSearchParams(window.location.search);
+            const nombre = params.get("nombre");
+            const presentacion = params.get("presentacion");
+            const descripcion = params.get("descripcion");
+            const imagen = params.get("imagen");
+
+            if (nombre && presentacion && descripcion && imagen) {
+                document.getElementById("productName").innerText = nombre;
+                document.getElementById("productPresentation").innerText = "Presentación: " + presentacion;
+                document.getElementById("productDescription").innerText = descripcion;
+                document.getElementById("productImage").src = imagen;
+
+                document.getElementById("whatsappButton").href = `https://wa.me/?text=Quiero%20cotizar%20${encodeURIComponent(nombre)}%20(${encodeURIComponent(presentacion)})`;
+                document.getElementById("emailButton").href = `mailto:ventas@aguasmarinas.com?subject=Cotización%20de%20${encodeURIComponent(nombre)}&body=Estoy%20interesado%20en%20cotizar%20${encodeURIComponent(presentacion)}`;
+            }
+        }
+
+        window.onload = loadProductDetails;
+    </script>
+</body>
+</html>
