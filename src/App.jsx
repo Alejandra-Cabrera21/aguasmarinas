@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Blog from "./components/Blog";
 import Producto from "./components/Producto"; // Componente para mostrar el detalle del producto
 
