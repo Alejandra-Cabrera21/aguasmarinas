@@ -1,7 +1,9 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Blog from "./components/Blog";
-import Producto from "./components/Producto"; // Componente para mostrar el detalle del producto
+import { HashRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import Home from "./pages/Home"; // asegúrate que está importado
+import Blog from "./pages/Blog";
+import Tienda from "./pages/Tienda";
+import Producto from "./components/Producto";
 
 const App = () => {
   return (
