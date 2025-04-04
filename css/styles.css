@@ -336,7 +336,7 @@ img {
 
 /* Estilo para móviles */
 @media (max-width: 600px) {
- nav {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -402,6 +402,7 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 120px; /* espacio para que no lo tape el navbar */
+    width: 100%;
   }
 
   .galeria, .detalle {
@@ -439,7 +440,21 @@ img {
     width: 90% !important;
     padding: 15px !important;
     font-size: 14px;
+    margin: auto;
     margin-top: 120px;
+    box-sizing: border-box;
+  }
+  
+  .blog-section {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-section img {
+    width: 80%;
+    margin-bottom: 10px;
   }
 
   .faq-title {
@@ -455,7 +470,25 @@ img {
   }
   body {
     padding-top: 120px; /* espacio para el navbar */
+    overflow-x: hidden; /* Evita el scroll horizontal */
   }
+
+  .nosotros-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .nosotros-section {
+    width: 100% !important;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Evita desbordamiento horizontal general */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
     .page-container,
   .productos-destacados,
   .nosotros-container,
@@ -467,7 +500,6 @@ img {
   margin-top: 120px;
   }
 }
-
 
 
 /* Sección de Bienvenida */
