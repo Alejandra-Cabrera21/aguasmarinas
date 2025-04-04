@@ -25,7 +25,7 @@ const Blog = () => {
     { img: "salindustrial.jpg", alt: "Sal Industrial", title: "Sal Industrial", desc: "La sal industrial es utilizada en múltiples aplicaciones...", link: "/productos/sal-industrial" },
     { img: "salblancayodada.jpg", alt: "Sal Blanca Yodada", title: "Sal Blanca Yodada", desc: "La sal blanca yodada es ideal para el consumo humano...", link: "/productos/sal-blanca-yodada" },
     { img: "salganado.jpg", alt: "Sal de Ganado", title: "Sal de Ganado", desc: "Esta sal es esencial para el bienestar del ganado...", link: "/productos/sal-ganado" },
-    { img: "salrefinada-b.jpg", alt: "Sal Refinada Tipo B", title: "Sal Refinada Tipo B", desc: "Una opción perfecta para cocina e industria...", link: "/productos/sal-refinada-tipo-b" },
+    { img: "salrefinadab.jpg", alt: "Sal Refinada Tipo B", title: "Sal Refinada Tipo B", desc: "Una opción perfecta para cocina e industria...", link: "/productos/sal-refinada-tipo-b" },
     { img: "sal-la-finaa.png", alt: "Sal Refinada La Fina", title: "Sal Refinada 'La Fina'", desc: "Con una textura más fina y mayor solubilidad...", link: "/productos/sal-refinada-la-fina" },
   ];
 
