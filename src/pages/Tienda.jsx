@@ -27,18 +27,17 @@ const Tienda = () => {
       <ul>
         {productosFiltrados.map((producto, index) => (
           <li key={index}>
-            <h2>
-              <a
-                href={`/AguasMarinas/${producto.url}`}
-                style={{
-                  textDecoration: "none",
-                  color: "inherit",
-                  fontWeight: "bold",
-                  fontSize: "21px"
-                }}
-              >
-                {producto.nombre}
-              </a>
+            <h2
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                fontWeight: "bold",
+                fontSize: "21px",
+                cursor: "pointer"
+              }}
+              onClick={() => window.location.href = `/AguasMarinas/${producto.url}`}
+            >
+              {producto.nombre}
             </h2>
           </li>
         ))}
