@@ -405,6 +405,25 @@ img {
     text-align: center;
   }
 
+  .salina-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .salina-img {
+    width: 80%; /* Imagen más grande en móviles */
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .arrow-button {
+    order: -1; /* Mueve flechas arriba de la imagen */
+    margin: 5px;
+  }
+
+
   .detalle {
     padding: 10px;
   }
