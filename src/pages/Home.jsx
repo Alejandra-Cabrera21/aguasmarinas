@@ -11,9 +11,9 @@ const Home = () => {
   const base = import.meta.env.BASE_URL;
 
   const productosDestacados = [
-    "salindustrial.jpg",
-    "salblancayodada.jpg",
-    "salganado.jpg",
+    "industrial1.jpg",
+    "yodada1.jpg",
+    "ganado1.jpg",
     "refinada2.jpg",
     "salrefinadab.jpg"
   ].map(img => ({
