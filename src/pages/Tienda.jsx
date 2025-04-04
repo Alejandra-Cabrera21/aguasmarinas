@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const productos = [
-  { nombre: "Sal Industrial", categorias: ["Saco"], url: "/productos/salindustrial" },
-  { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "/productos/salblancayodada" },
-  { nombre: "Sal de Ganado", categorias: ["Saco"], url: "/productos/salganado" },
-  { nombre: "Sal Refinada Tipo B", categorias: ["Saco"], url: "/productos/salrefinadatipob" },
-  { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "/productos/salrefinadalafina" },
-  { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "/productos/salyodadaartesana" }
+  { nombre: "Sal Industrial", categorias: ["Saco"], url: "/AguasMarinas/productos/salindustrial.html" },
+  { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "/AguasMarinas/productos/salblancayodada.html" },
+  { nombre: "Sal de Ganado", categorias: ["Saco"], url: "/AguasMarinas/productos/salganado.html" },
+  { nombre: "Sal Refinada Tipo B", categorias: ["Saco"], url: "/AguasMarinas/productos/salrefinadatipob.html" },
+  { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "/AguasMarinas/productos/salrefinadalafina.html" },
+  { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "/AguasMarinas/productos/salyodadaartesana.html" }
 ];
-
 
 const Tienda = () => {
   const [filtro, setFiltro] = useState("Todos");
@@ -30,9 +28,17 @@ const Tienda = () => {
         {productosFiltrados.map((producto, index) => (
           <li key={index}>
             <h2>
-              <Link to={producto.url} style={{ textDecoration: "none", color: "inherit", fontWeight: "bold", fontSize: "21px" }}>
+              <a
+                href={producto.url}
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  fontWeight: "bold",
+                  fontSize: "21px"
+                }}
+              >
                 {producto.nombre}
-              </Link>
+              </a>
             </h2>
           </li>
         ))}
