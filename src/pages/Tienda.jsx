@@ -30,12 +30,9 @@ const Tienda = () => {
             <h2>
               <a
                 href={producto.url}
-                style={{
-                  textDecoration: "none",
-                  color: "inherit",
-                  fontWeight: "bold",
-                  fontSize: "21px"
-                }}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit", fontWeight: "bold", fontSize: "21px" }}
               >
                 {producto.nombre}
               </a>
