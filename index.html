@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
 
-    <!-- ✅ Script para forzar el hash / en la URL antes de que cargue React -->
+    <!-- ✅ Script CORRECTO para redirigir al hash si no existe -->
     <script>
       if (!location.hash || location.hash === "#") {
-        window.location.replace(location.href + "#/");
+        const clean = location.href.replace(/#.*$/, "");
+        location.replace(clean + "#/");
       }
     </script>
   </head>
