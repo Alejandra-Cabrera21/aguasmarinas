@@ -82,5 +82,32 @@ const Blog = () => {
     </div>
   );
 };
+      {/* Sección de Datos Curiosos */}
+      <div className="blog-section curious-facts">
+        <h5 className="curious-facts-title">Datos Curiosos</h5>
+        <div className="curious-facts-container">
+          <div className="curious-fact-box">
+            <h3>Usos de la Sal</h3>
+            <p>
+              La sal tiene una variedad de usos, desde la conservación de alimentos hasta la fabricación de productos químicos. Es fundamental en la industria alimentaria, además de ser utilizada en el tratamiento de agua y en procesos industriales.
+            </p>
+          </div>
+          <div className="curious-fact-box">
+            <h3>Beneficios para la Salud</h3>
+            <p>
+              La sal es esencial para el equilibrio de los líquidos en el cuerpo y el buen funcionamiento de los nervios y músculos. La sal yodada es particularmente importante para prevenir problemas de tiroides.
+            </p>
+          </div>
+          <div className="curious-fact-box">
+            <h3>Proceso de Producción</h3>
+            <p>
+              El proceso de producción de la sal comienza con la recolección de agua de mar, que luego se deja evaporar en salinas naturales. Este proceso permite obtener cristales de sal pura que se utilizan en diferentes industrias y aplicaciones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Blog;
