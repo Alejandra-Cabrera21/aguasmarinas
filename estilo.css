@@ -340,8 +340,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 20px;
+    padding: 10px;
     background-color: #030540; /* Fondo oscuro */
+    flex-wrap: wrap;
+
   }
 
   .logo-container img {
@@ -354,7 +356,10 @@ img {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 20px; /* Espaciado entre los enlaces */
+    gap: 10px; /* Espaciado entre los enlaces */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
 
   nav ul li {
