@@ -6,7 +6,7 @@ const Navbar = () => {
   const [scrollingDown, setScrollingDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0); // Para controlar la dirección del scroll
   const [showNavbar, setShowNavbar] = useState(true); // Para controlar la visibilidad del navbar
-  const scrollThreshold = 190; // Umbral para mostrar el navbar cuando se sube (en píxeles)
+  const scrollThreshold = 150; // Umbral para mostrar el navbar cuando se sube (en píxeles)
 
   const handleScroll = () => {
     if (window.scrollY > lastScrollY) {
