@@ -31,8 +31,7 @@ const Tienda = () => {
           <li key={index}>
             <h2>
               <a
-                  href={`/AguasMarinas/${producto.url}`}
-
+                href={`${base}${producto.url}`}
                 style={{
                   textDecoration: "none",
                   color: "inherit",
