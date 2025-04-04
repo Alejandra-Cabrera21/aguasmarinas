@@ -336,6 +336,16 @@ img {
 
 /* Estilo para móviles */
 @media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  body {
+    padding-top: 100px; /* altura del navbar */
+    overflow-x: hidden; /* evita scroll horizontal */
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -350,30 +360,24 @@ img {
   }
 
   .logo-container img {
-    width: 75px;
+    width: 70px;
   }
 
   nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 1px;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
-  }
-
-  nav ul li {
-    margin: 0;
-    padding: 0;
+    gap: 4px;
   }
 
   nav ul li a {
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
     padding: 6px 8px;
   }
 
@@ -381,15 +385,14 @@ img {
     color: #f8f6f6;
   }
 
-  /* Ajuste de los botones */
   .cta-button, .btn-detalle {
     padding: 8px 15px;
     font-size: 14px;
     background-color: #f8f6f6;
     color: #333;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s;
   }
 
@@ -397,11 +400,11 @@ img {
     background-color: #e1e1e1;
   }
 
-  /* Acomodo del producto */
+  /* Acomodo para productos */
   .producto {
     flex-direction: column;
     align-items: center;
-    margin-top: 120px; /* espacio para que no lo tape el navbar */
+    margin-top: 110px;
     width: 100%;
   }
 
@@ -432,29 +435,23 @@ img {
     padding: 10px;
   }
 
-  /* Secciones más pequeñas en móviles */
-  .hero-content,
+  /* Secciones generales */
+  .hero, .hero-content,
   .nosotros-container,
+  .nosotros-text,
+  .nosotros-section,
   .faq-container,
-  .blog-container {
-    width: 90% !important;
+  .blog-container,
+  .blog-section {
+    width: 100% !important;
     padding: 15px !important;
     font-size: 14px;
-    margin: auto;
-    margin-top: 120px;
+    margin: 0 auto;
     box-sizing: border-box;
   }
-  
-  .blog-section {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
 
-  .blog-section img {
-    width: 80%;
-    margin-bottom: 10px;
+  .hero-content {
+    margin-top: 100px;
   }
 
   .faq-title {
@@ -468,36 +465,28 @@ img {
   .faq-answer {
     font-size: 14px;
   }
-  body {
-    padding-top: 120px; /* espacio para el navbar */
-    overflow-x: hidden; /* Evita el scroll horizontal */
+
+  .blog-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-section img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .nosotros-text h1 {
     font-size: 1.6rem;
   }
 
-  .nosotros-section {
-    width: 100% !important;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  /* Evita desbordamiento horizontal general */
-  * {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  
-    .page-container,
+  /* Ajustes generales */
+  .page-container,
   .productos-destacados,
-  .nosotros-container,
-  .faq-container,
-  .hero-content {
-    margin-top: 120px; /* asegura separación con el navbar */
-  }
   .contenido-ajustado {
-  margin-top: 120px;
+    margin-top: 100px;
   }
 }
 
