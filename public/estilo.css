@@ -436,10 +436,10 @@ img {
   .nosotros-container,
   .faq-container,
   .blog-container {
-    width: 95%;
-    padding: 10px;
+    width: 90% !important;
+    padding: 15px !important;
+    font-size: 14px;
     margin-top: 120px;
-    font-size: 0.9rem;
   }
 
   .faq-title {
@@ -452,6 +452,19 @@ img {
 
   .faq-answer {
     font-size: 14px;
+  }
+  body {
+    padding-top: 120px; /* espacio para el navbar */
+  }
+    .page-container,
+  .productos-destacados,
+  .nosotros-container,
+  .faq-container,
+  .hero-content {
+    margin-top: 120px; /* asegura separación con el navbar */
+  }
+  .contenido-ajustado {
+  margin-top: 120px;
   }
 }
 
