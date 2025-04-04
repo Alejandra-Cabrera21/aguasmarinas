@@ -336,8 +336,13 @@ img {
 
 /* Estilo para móviles */
 @media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
   body {
-    padding-top: 100px; /* espacio para navbar */
+    padding-top: 90px; /* altura del navbar reducida */
     overflow-x: hidden;
   }
 
@@ -355,30 +360,24 @@ img {
   }
 
   .logo-container img {
-    width: 75px;
+    width: 70px;
   }
 
   nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 1px;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
-  }
-
-  nav ul li {
-    margin: 0;
-    padding: 0;
+    gap: 4px;
   }
 
   nav ul li a {
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
     padding: 6px 8px;
   }
 
@@ -386,119 +385,14 @@ img {
     color: #f8f6f6;
   }
 
-  /* Hero Section */
-  .hero, .hero-content {
-    width: 100% !important;
-    padding: 20px !important;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  /* Nosotros Section */
-  .nosotros-container,
-  .nosotros-section,
-  .nosotros-text {
-    width: 100% !important;
-    padding: 15px;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-  }
-
-  .nosotros-section img {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-
-  /* Blog Section */
-  .blog-container {
-    width: 95% !important;
-    padding: 15px;
-    margin: auto;
-    margin-top: 20px;
-  }
-
-  .blog-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 25px;
-  }
-
-  .blog-section img {
-    width: 90%;
-    height: auto;
-    margin-bottom: 15px;
-  }
-
-  /* Proceso de producción salinas: flechas verticales */
-  .salina-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .arrow-button {
-    margin: 5px 0;
-  }
-
-  .salina-img {
-    width: 90%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  /* Productos Destacados */
-  .carousel-container {
-    width: 95%;
-    margin: auto;
-  }
-
-  .carousel-slide img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-
-  .carousel-controls button {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  /* Producto */
-  .producto {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    width: 100%;
-  }
-
-  .galeria, .detalle {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  /* Botones */
   .cta-button, .btn-detalle {
-    padding: 10px 15px;
+    padding: 8px 15px;
     font-size: 14px;
     background-color: #f8f6f6;
     color: #333;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s;
   }
 
@@ -506,27 +400,105 @@ img {
     background-color: #e1e1e1;
   }
 
-  /* Evitar desbordamientos */
-  * {
-    max-width: 100%;
+  /* Acomodo para productos */
+  .producto {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    width: 100%;
+  }
+
+  .galeria, .detalle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .salina-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .salina-img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .arrow-button {
+    order: -1;
+    margin: 5px;
+  }
+
+  .detalle {
+    padding: 10px;
+  }
+
+  /* Secciones generales */
+  .hero, .hero-content,
+  .nosotros-container,
+  .nosotros-text,
+  .nosotros-section,
+  .faq-container,
+  .blog-container,
+  .blog-section {
+    width: 100% !important;
+    padding: 15px !important;
+    font-size: 14px;
+    margin: 0 auto;
     box-sizing: border-box;
   }
 
-  /* Títulos separados del navbar */
-  .page-container,
-  .productos-destacados,
-  .nosotros-container,
-  .faq-container,
-  .hero-content,
+  .hero-content {
+    margin-top: 90px;
+  }
+
+  .productos-destacados {
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+
   .contenido-ajustado {
-    margin-top: 100px;
+    margin-top: 90px;
+  }
+
+  /* Producto destacado más ancho */
+  .productoDes {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .productoDes img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Sobre Nosotros - Imagen encima del texto */
+  .nosotros-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nosotros-container img {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .nosotros-text {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .nosotros-text h1 {
+    font-size: 1.6rem;
   }
 
   /* FAQ */
-  .faq-container {
-    padding: 15px;
-  }
-
   .faq-title {
     font-size: 1.5rem;
   }
@@ -538,7 +510,56 @@ img {
   .faq-answer {
     font-size: 14px;
   }
+
+  /* Blog */
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-section img {
+    width: 80%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .blog-container {
+    margin-bottom: 40px;
+  }
+
+  /* Flechas de blog alrededor de imagen */
+  .blog-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-slide .arrow-up,
+  .blog-slide .arrow-down {
+    margin: 5px 0;
+    font-size: 24px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 10px;
+  }
+
+  .blog-slide .arrow-up {
+    order: -1;
+  }
+
+  .blog-slide img {
+    order: 0;
+  }
+
+  /* Ajuste general final */
+  .page-container {
+    margin-top: 90px;
+  }
 }
+
 
 
 /* Sección de Bienvenida */
