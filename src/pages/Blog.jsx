@@ -40,9 +40,10 @@ const Blog = () => {
           <div className="blog-text">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <Link to={item.link}>
-              <button className="view-store-button">Ver en Tienda</button>
-            </Link>
+            <a href={`/AguasMarinas/${item.url}`} className="view-store-button">
+              Ver en Tienda
+            </a>
+
           </div>
         </div>
       ))}
