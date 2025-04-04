@@ -340,7 +340,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 8px;
     background-color: #030540; /* Fondo oscuro */
     flex-wrap: wrap;
   }
