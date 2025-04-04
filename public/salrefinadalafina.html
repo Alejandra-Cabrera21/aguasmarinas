@@ -1,72 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saco de Sal Refinada La Fina</title>
-    <link rel="stylesheet" href="/AguasMarinas/estilo.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saco de Sal Refinada La Fina</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <div class="producto">
-        <div class="galeria">
-            <div class="salina-gallery">
-                <div class="salina-image-container">
-                    <button class="arrow-button" onclick="cambiarImagen(-1)">←</button>
-                    <img id="imagen-principal" class="salina-img" src="/AguasMarinas/img/refinadaa1.jpg" alt="Sal la fina" />
-                    <button class="arrow-button" onclick="cambiarImagen(1)">→</button>
-                </div>
-            </div>
+  <div class="producto">
+    <div class="galeria">
+      <div class="salina-gallery">
+        <div class="salina-image-container">
+          <button class="arrow-button" onclick="cambiarImagen(-1)">←</button>
+          <img id="imagen-principal" class="salina-img" src="img/refinadaa1.jpg" alt="Sal La Fina" />
+          <button class="arrow-button" onclick="cambiarImagen(1)">→</button>
         </div>
-        <div class="detalle">
-            <h1>Sal Refinada “La Fina”</h1>
-            <p>Sal importada de gran calidad y textura fina.</p>
-            <label for="presentacion">Presentación:</label>
-            <select id="presentacion">
-                <option selected>Saco de 50 kg (110 lb)</option>
-                <option>Fardo de 25 paquetes de 460g (1 lb)</option>
-            </select>
-
-            <!-- Enlace corregido para WhatsApp con número de la empresa -->
-            <a href="https://wa.me/50253854812?text=Quiero%20cotizar%20Sal%20refinada%20la%20Mexicana" 
-               class="button whatsapp" 
-               target="_blank" 
-               rel="noopener noreferrer">
-                Cotizar por WhatsApp
-            </a>
-
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aguasmarinasgt@gmail.com&su=Cotización%20Sal%20Fina%20La%20Mexicana" 
-               class="button email" 
-               target="_blank" 
-               rel="noopener noreferrer">
-                Cotizar por Correo
-            </a>
-
-            <a href="/AguasMarinas/tienda" class="button back">Regresar a la Tienda</a>
-        </div>
+      </div>
     </div>
+    <div class="detalle">
+      <h1>Sal Refinada “La Fina”</h1>
+      <p>Sal importada de gran calidad y textura fina.</p>
+      <label for="presentacion">Presentación:</label>
+      <select id="presentacion">
+        <option selected>Saco de 50 kg (110 lb)</option>
+        <option>Fardo de 25 paquetes de 460g (1 lb)</option>
+      </select>
 
-    <script>
-        const images = [
-            "../img/refinadaa1.jpg",
-            "../img/refinada2.jpg"
-        ];
-        let currentIndex = 0;
+      <a href="https://wa.me/50253854812?text=Quiero%20cotizar%20Sal%20refinada%20la%20Mexicana" class="button whatsapp" target="_blank">Cotizar por WhatsApp</a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aguasmarinasgt@gmail.com&su=Cotización%20Sal%20Fina%20La%20Mexicana" class="button email" target="_blank">Cotizar por Correo</a>
+      <a href="tienda" class="button back">Regresar a la Tienda</a>
+    </div>
+  </div>
 
-        function cambiarImagen(direction) {
-            // Cambiar el índice de la imagen
-            currentIndex += direction;
-            
-            // Si estamos al principio o al final del arreglo, reiniciar el índice
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1;
-            } else if (currentIndex >= images.length) {
-                currentIndex = 0;
-            }
-            
-            // Cambiar la fuente de la imagen principal
-            document.getElementById('imagen-principal').src = images[currentIndex];
-        }
-    </script>
+  <script>
+    const images = [
+      "img/refinadaa1.jpg",
+      "img/refinada2.jpg"
+    ];
+    let currentIndex = 0;
+
+    function cambiarImagen(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = images.length - 1;
+      else if (currentIndex >= images.length) currentIndex = 0;
+      document.getElementById('imagen-principal').src = images[currentIndex];
+    }
+  </script>
 </body>
 </html>
-
