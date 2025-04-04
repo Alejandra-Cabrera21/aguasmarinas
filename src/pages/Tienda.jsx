@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-const base = import.meta.env.BASE_URL;
-
 const productos = [
   { nombre: "Sal Industrial", categorias: ["Saco"], url: "salindustrial.html" },
   { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "salblancayodada.html" },
@@ -31,7 +29,7 @@ const Tienda = () => {
           <li key={index}>
             <h2>
               <a
-                href={`${base}${producto.url}`}
+                href={`/AguasMarinas/${producto.url}`}
                 style={{
                   textDecoration: "none",
                   color: "inherit",
