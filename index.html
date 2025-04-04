@@ -2,19 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-     <base href="/AguasMarinas/" />
+    <base href="/AguasMarinas/" />
     <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <script>
-      if (!location.hash) {
-        location.replace(location.href + '#/');
-      }
-    </script>
     <script type="module" crossorigin src="/AguasMarinas/assets/index-Zk1Ax5w0.js"></script>
     <link rel="stylesheet" crossorigin href="/AguasMarinas/assets/index-CzanUdWl.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+
+    <!-- ✅ Redirección automática al hash si falta -->
+    <script>
+      if (!location.hash) {
+        location.replace(location.href + "#/");
+      }
+    </script>
+
   </body>
 </html>
