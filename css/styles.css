@@ -342,7 +342,7 @@ img {
   }
 
   body {
-    padding-top: 90px; /* altura del navbar reducida */
+    padding-top: 90px;
     overflow-x: hidden;
   }
 
@@ -400,7 +400,7 @@ img {
     background-color: #e1e1e1;
   }
 
-  /* Acomodo para productos */
+  /* Ajuste de producto individual (página de producto) */
   .producto {
     flex-direction: column;
     align-items: center;
@@ -463,19 +463,28 @@ img {
     margin-top: 90px;
   }
 
-  /* Producto destacado más ancho */
+  /* Ajuste para producto destacado en home */
   .productoDes {
     width: 90%;
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .productoDes img {
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
   }
 
-  /* Sobre Nosotros - Imagen encima del texto */
+  .productoDes .btn-detalle {
+    margin-top: 5px;
+  }
+
+  /* SOBRE NOSOTROS (movil: imagen arriba, texto abajo) */
   .nosotros-container {
     display: flex;
     flex-direction: column;
@@ -496,6 +505,7 @@ img {
 
   .nosotros-text h1 {
     font-size: 1.6rem;
+    margin-top: 20px;
   }
 
   /* FAQ */
@@ -511,7 +521,7 @@ img {
     font-size: 14px;
   }
 
-  /* Blog */
+  /* BLOG ajustes */
   .blog-section {
     display: flex;
     flex-direction: column;
@@ -529,7 +539,7 @@ img {
     margin-bottom: 40px;
   }
 
-  /* Flechas de blog alrededor de imagen */
+  /* Flechas blog: una arriba y una abajo */
   .blog-slide {
     display: flex;
     flex-direction: column;
@@ -554,11 +564,12 @@ img {
     order: 0;
   }
 
-  /* Ajuste general final */
+  /* Espaciado general */
   .page-container {
     margin-top: 90px;
   }
 }
+
 
 
 
