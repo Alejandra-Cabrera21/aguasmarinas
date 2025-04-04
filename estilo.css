@@ -1114,8 +1114,8 @@ img {
 }
 
 .view-store-button {
+  background-color: #f8c0c0 !important; /* rojo pálido */
   color: black !important;
-  background-color: #f8c0c0; /* rojo pálido */
   font-weight: bold;
   text-decoration: none;
   border: 2px solid black;
@@ -1127,6 +1127,6 @@ img {
 }
 
 .view-store-button:hover {
-  background-color: #f39a9a; /* rojo un poco más intenso al pasar el mouse */
+  background-color: #f39a9a !important; /* un poco más intenso */
   color: black !important;
 }
