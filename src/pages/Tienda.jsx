@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const productos = [
-  { nombre: "Sal Industrial", categorias: ["Saco"], url: "/AguasMarinas/productos/salindustrial.html" },
-  { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "/AguasMarinas/productos/salblancayodada.html" },
-  { nombre: "Sal de Ganado", categorias: ["Saco"], url: "/AguasMarinas/productos/salganado.html" },
-  { nombre: "Sal Refinada Tipo B", categorias: ["Saco"], url: "/AguasMarinas/productos/salrefinadatipob.html" },
-  { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "/AguasMarinas/productos/salrefinadalafina.html" },
-  { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "/AguasMarinas/productos/salyodadaartesana.html" }
+  { nombre: "Sal Industrial", categorias: ["Saco"], url: "/productos/salindustrial.html" },
+  { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "/productos/salblancayodada.html" },
+  { nombre: "Sal de Ganado", categorias: ["Saco"], url: "/productos/salganado.html" },
+  { nombre: "Sal Refinada Tipo B", categorias: ["Saco"], url: "/productos/salrefinadab.html" },
+  { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "/productos/salrefinadalafina.html" },
+  { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "/productos/salyodadaartesana.html" }
 ];
 
 const Tienda = () => {
@@ -30,9 +30,12 @@ const Tienda = () => {
             <h2>
               <a
                 href={producto.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none", color: "inherit", fontWeight: "bold", fontSize: "21px" }}
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  fontWeight: "bold",
+                  fontSize: "21px"
+                }}
               >
                 {producto.nombre}
               </a>
