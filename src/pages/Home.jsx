@@ -17,27 +17,27 @@ const Home = () => {
     "refinada2.jpg",
     "salrefinadab.jpg"
   ].map(img => ({
-    src: ${base}img/${img}
+    src: `${base}img/${img}` // ✅ Corrección aquí
   }));
 
   const beneficios = [
     {
-      img: ${base}img/purezaa.jpg,
+      img: `${base}img/purezaa.jpg`, // ✅ Corrección aquí
       title: "Máxima Pureza",
       desc: "Garantizamos la más alta calidad en cada grano."
     },
     {
-      img: ${base}img/calidad.jpg,
+      img: `${base}img/calidad.jpg`,
       title: "Certificación de Calidad",
       desc: "Cumplimos con los estándares más exigentes."
     },
     {
-      img: ${base}img/ecologico.jpg,
+      img: `${base}img/ecologico.jpg`,
       title: "Producción Ecológica",
       desc: "Un proceso amigable con el medio ambiente."
     },
     {
-      img: ${base}img/versatil.jpg,
+      img: `${base}img/versatil.jpg`,
       title: "Usos Versátiles",
       desc: "Ideal para múltiples aplicaciones industriales y gastronómicas."
     }
@@ -59,7 +59,7 @@ const Home = () => {
           {productosDestacados.map((producto, index) => (
             <SwiperSlide key={index}>
               <div className="productoDes">
-                <img src={producto.src} alt={Producto ${index + 1}} className="imagen-producto-destacado" />
+                <img src={producto.src} alt={`Producto ${index + 1}`} className="imagen-producto-destacado" />
                 <Link to="/tienda" className="btn-detallehome">Ver más</Link>
               </div>
             </SwiperSlide>
@@ -70,7 +70,7 @@ const Home = () => {
       <section className="sobre-nosotros">
         <h2>Sobre Nosotros</h2>
         <div className="nosotros-content">
-          <img src={${base}img/nosotros1.jpg} alt="Nuestra Fábrica" />
+          <img src={`${base}img/nosotros1.jpg`} alt="Nuestra Fábrica" /> {/* ✅ Corrección */}
           <p>Somos una empresa dedicada a la producción y comercialización de sal de alta pureza, con compromiso en la calidad y el medio ambiente.</p>
         </div>
       </section>
