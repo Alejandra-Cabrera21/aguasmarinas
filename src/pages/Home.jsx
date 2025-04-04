@@ -5,17 +5,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import "../../css/styles.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.png"; // Este sí puede quedar así
 
 const Home = () => {
   const base = import.meta.env.BASE_URL;
 
   const productosDestacados = [
-    "sal-industrial.jpg",
-    "sal-blanca-yodada.jpg",
-    "sal-ganado.jpg",
+    "salindustrial.jpg",
+    "salblancayodada.jpg",
+    "salganado.jpg",
     "refinada2.jpg",
-    "sal-refinada-b.jpg"
+    "salrefinadab.jpg"
   ].map(img => ({
     src: `${base}img/${img}`
   }));
@@ -45,7 +45,6 @@ const Home = () => {
 
   return (
     <div className="blog-container">
-      {/* Sección de Bienvenida */}
       <section className="hero">
         <div className="hero-content">
           <h1>La pureza de la naturaleza en cada grano</h1>
@@ -54,7 +53,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Sección de Productos Destacados */}
       <section className="productos-destacados">
         <h2>Productos Destacados</h2>
         <Swiper navigation={true} modules={[Navigation]} className="swiper-container-Home">
@@ -69,7 +67,6 @@ const Home = () => {
         </Swiper>
       </section>
 
-      {/* Sección Sobre Nosotros */}
       <section className="sobre-nosotros">
         <h2>Sobre Nosotros</h2>
         <div className="nosotros-content">
@@ -78,7 +75,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Sección Beneficios */}
       <section className="beneficios">
         <h2 className="beneficios-titulo">¿Por qué elegir nuestra sal?</h2>
         <div className="beneficios-container">
