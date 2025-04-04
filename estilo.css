@@ -1117,8 +1117,8 @@ img {
   background-color: black !important;
   color: white !important;
   font-weight: bold;
-  text-decoration: none;
-  border: none;
+  text-decoration: none !important;
+  border: none !important;
   padding: 10px 15px;
   display: inline-block;
   border-radius: 5px;
