@@ -79,9 +79,6 @@ const Blog = () => {
           <button className="arrow-buttonBLOG right-arrowBLOG" onClick={() => setCurrentVideo((currentVideo + 1) % videos.length)}>→</button>
         </div>
       </div>
-    </div>
-  );
-};
       {/* Sección de Datos Curiosos */}
       <div className="blog-section curious-facts">
         <h5 className="curious-facts-title">Datos Curiosos</h5>
@@ -109,5 +106,6 @@ const Blog = () => {
     </div>
   );
 };
+    
 
 export default Blog;
