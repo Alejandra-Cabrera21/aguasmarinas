@@ -10,13 +10,16 @@
   <body>
     <div id="root"></div>
 
-    <!-- ✅ Redirección automática al hash si falta -->
+    <!-- ✅ Redirección al hash y carga controlada de React -->
     <script>
       if (!location.hash) {
-        location.replace(location.href + "#/");
+        location.replace(location.href + '#/');
+      } else {
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = './src/main.jsx';
+        document.body.appendChild(script);
       }
     </script>
-
-    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
