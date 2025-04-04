@@ -10,6 +10,7 @@ const productos = [
   { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "/productos/salyodadaartesana" }
 ];
 
+
 const Tienda = () => {
   const [filtro, setFiltro] = useState("Todos");
 
