@@ -1114,11 +1114,11 @@ img {
 }
 
 .view-store-button {
-  background-color: #f8c0c0 !important; /* rojo pálido */
-  color: black !important;
+  background-color: black !important;
+  color: white !important;
   font-weight: bold;
   text-decoration: none;
-  border: 2px solid black;
+  border: none;
   padding: 10px 15px;
   display: inline-block;
   border-radius: 5px;
@@ -1127,6 +1127,6 @@ img {
 }
 
 .view-store-button:hover {
-  background-color: #f39a9a !important; /* un poco más intenso */
-  color: black !important;
+  background-color: #333 !important;
+  color: white !important;
 }
