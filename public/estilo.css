@@ -395,6 +395,19 @@ img {
     gap: 20px;
     margin-top: 20px;
   }
+  producto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria, .detalle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .detalle {
+    padding: 10px;
+  }
 }
 
 
