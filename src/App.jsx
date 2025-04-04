@@ -19,6 +19,7 @@ const App = () => {
         <Route path="/productos/sal-refinada-la-fina" element={<Producto name="Sal Refinada 'La Fina'" />} />
         <Route path="/productos/sal-yodada-artesana" element={<Producto name="Sal Yodada Artesana" />} />
 
+        <Route path="" element={<Navigate to="/" replace />} />
         {/* Redirección para rutas no encontradas */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
