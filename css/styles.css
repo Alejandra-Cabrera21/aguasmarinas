@@ -521,7 +521,7 @@ img {
     font-size: 14px;
   }
 
-  /* BLOG – configuración respetada */
+  /* BLOG */
   .blog-section {
     display: flex;
     flex-direction: column;
@@ -536,7 +536,7 @@ img {
   }
 
   .blog-container {
-    margin-bottom: 60px; /* <-- MÁS separación entre blog-containers */
+    margin-bottom: 60px; /* separación adicional */
   }
 
   .blog-slide {
