@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const productos = [
   { nombre: "Sal Industrial", categorias: ["Saco"], url: "salindustrial.html" },
   { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "salblancayodada.html" },
@@ -8,7 +10,6 @@ const productos = [
   { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "salrefinadalafina.html" },
   { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "salyodadaartesana.html" }
 ];
-
 
 const Tienda = () => {
   const [filtro, setFiltro] = useState("Todos");
@@ -30,7 +31,7 @@ const Tienda = () => {
           <li key={index}>
             <h2>
               <a
-                href={producto.url}
+                href={`${base}${producto.url}`}
                 style={{
                   textDecoration: "none",
                   color: "inherit",
