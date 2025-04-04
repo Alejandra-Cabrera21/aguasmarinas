@@ -10,24 +10,42 @@ import logo from "../assets/logo.png";
 const Home = () => {
   const base = import.meta.env.BASE_URL;
 
-  // ✅ Rutas completas desde que se define el array
   const productosDestacados = [
-    base + "img/sal-industrial.jpg",
-    base + "img/sal-blanca-yodada.jpg",
-    base + "img/sal-ganado.jpg",
-    base + "img/refinada2.jpg",
-    base + "img/sal-refinada-b.jpg"
-  ];
+    "sal-industrial.jpg",
+    "sal-blanca-yodada.jpg",
+    "sal-ganado.jpg",
+    "refinada2.jpg",
+    "sal-refinada-b.jpg"
+  ].map(img => ({
+    src: `${base}img/${img}`
+  }));
 
   const beneficios = [
-    { img: base + "img/purezaa.jpg", title: "Máxima Pureza", desc: "Garantizamos la más alta calidad en cada grano." },
-    { img: base + "img/calidad.jpg", title: "Certificación de Calidad", desc: "Cumplimos con los estándares más exigentes." },
-    { img: base + "img/ecologico.jpg", title: "Producción Ecológica", desc: "Un proceso amigable con el medio ambiente." },
-    { img: base + "img/versatil.jpg", title: "Usos Versátiles", desc: "Ideal para múltiples aplicaciones industriales y gastronómicas." }
+    {
+      img: `${base}img/purezaa.jpg`,
+      title: "Máxima Pureza",
+      desc: "Garantizamos la más alta calidad en cada grano."
+    },
+    {
+      img: `${base}img/calidad.jpg`,
+      title: "Certificación de Calidad",
+      desc: "Cumplimos con los estándares más exigentes."
+    },
+    {
+      img: `${base}img/ecologico.jpg`,
+      title: "Producción Ecológica",
+      desc: "Un proceso amigable con el medio ambiente."
+    },
+    {
+      img: `${base}img/versatil.jpg`,
+      title: "Usos Versátiles",
+      desc: "Ideal para múltiples aplicaciones industriales y gastronómicas."
+    }
   ];
 
   return (
     <div className="blog-container">
+      {/* Sección de Bienvenida */}
       <section className="hero">
         <div className="hero-content">
           <h1>La pureza de la naturaleza en cada grano</h1>
@@ -36,13 +54,14 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Sección de Productos Destacados */}
       <section className="productos-destacados">
         <h2>Productos Destacados</h2>
         <Swiper navigation={true} modules={[Navigation]} className="swiper-container-Home">
-          {productosDestacados.map((img, index) => (
+          {productosDestacados.map((producto, index) => (
             <SwiperSlide key={index}>
               <div className="productoDes">
-                <img src={img} alt="Producto Destacado" className="imagen-producto-destacado" />
+                <img src={producto.src} alt={`Producto ${index + 1}`} className="imagen-producto-destacado" />
                 <Link to="/tienda" className="btn-detallehome">Ver más</Link>
               </div>
             </SwiperSlide>
@@ -50,14 +69,16 @@ const Home = () => {
         </Swiper>
       </section>
 
+      {/* Sección Sobre Nosotros */}
       <section className="sobre-nosotros">
         <h2>Sobre Nosotros</h2>
         <div className="nosotros-content">
-          <img src={base + "img/nosotros1.jpg"} alt="Nuestra Fábrica" />
+          <img src={`${base}img/nosotros1.jpg`} alt="Nuestra Fábrica" />
           <p>Somos una empresa dedicada a la producción y comercialización de sal de alta pureza, con compromiso en la calidad y el medio ambiente.</p>
         </div>
       </section>
 
+      {/* Sección Beneficios */}
       <section className="beneficios">
         <h2 className="beneficios-titulo">¿Por qué elegir nuestra sal?</h2>
         <div className="beneficios-container">
