@@ -1110,9 +1110,10 @@ img {
 .right-arrowBLOG {
   right: 1px; /* Posición de la flecha derecha */
 }
+
 .view-store-button {
   color: black !important;
-  background-color: #f8c0c0;
+  background-color: #f8c0c0; /* rojo pálido */
   font-weight: bold;
   text-decoration: none;
   border: 2px solid black;
@@ -1124,9 +1125,10 @@ img {
 }
 
 .view-store-button:hover {
-  background-color: #f2f2f2;
+  background-color: #f39a9a; /* rojo un poco más intenso al pasar el mouse */
   color: black !important;
 }
+
 
 
 
