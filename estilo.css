@@ -1112,5 +1112,22 @@ img {
 .right-arrowBLOG {
   right: 1px; /* Posición de la flecha derecha */
 }
+.view-store-button {
+  display: inline-block;
+  background-color: #ffffff; /* o el color que desees de fondo */
+  color: black; /* ✅ TEXTO NEGRO */
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-store-button:hover {
+  background-color: #f0f0f0; /* efecto al pasar el mouse */
+  color: black;
+}
 
 
