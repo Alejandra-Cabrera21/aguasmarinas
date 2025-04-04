@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const productos = [
-  { nombre: "Sal Industrial", categorias: ["Saco"], url: "/productos/sal-industrial" },
-  { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "/productos/sal-blanca-yodada" },
-  { nombre: "Sal de Ganado", categorias: ["Saco"], url: "/productos/sal-ganado" },
-  { nombre: "Sal Refinada Tipo B", categorias: ["Saco"], url: "/productos/sal-refinada-tipo-b" },
-  { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "/productos/sal-refinada-la-fina" },
-  { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "/productos/sal-yodada-artesana" }
+  { nombre: "Sal Industrial", categorias: ["Saco"], url: "/productos/salindustrial" },
+  { nombre: "Sal Blanca Yodada", categorias: ["Saco"], url: "/productos/salblancayodada" },
+  { nombre: "Sal de Ganado", categorias: ["Saco"], url: "/productos/salganado" },
+  { nombre: "Sal Refinada Tipo B", categorias: ["Saco"], url: "/productos/salrefinadatipob" },
+  { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "/productos/salrefinadalafina" },
+  { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "/productos/salyodadaartesana" }
 ];
 
 const Tienda = () => {
