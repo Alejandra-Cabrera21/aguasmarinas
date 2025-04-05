@@ -14,14 +14,24 @@ const Tienda = () => {
 
   const productosFiltrados = filtro === "Todos"
     ? productos
-    : productos.filter(p => p.categorias.includes(filtro));
+    : productos.filter((p) => p.categorias.includes(filtro));
 
   return (
     <div className="page-container">
       <h1>Nuestros Productos</h1>
       <div style={{ marginBottom: "20px" }}>
-        <button onClick={() => setFiltro("Todos")} style={{ marginRight: "10px" }}>Todos</button>
-        <button onClick={() => setFiltro("Empacada")} style={{ marginRight: "10px" }}>Sal Empacada</button>
+        <button
+          onClick={() => setFiltro("Todos")}
+          style={{ marginRight: "10px" }}
+        >
+          Todos
+        </button>
+        <button
+          onClick={() => setFiltro("Empacada")}
+          style={{ marginRight: "10px" }}
+        >
+          Sal Empacada
+        </button>
         <button onClick={() => setFiltro("Saco")}>Sal de Saco</button>
       </div>
       <ul>
@@ -35,9 +45,8 @@ const Tienda = () => {
                 fontSize: "21px",
                 cursor: "pointer"
               }}
-              onClick={() => {
-                window.location.href = `${import.meta.env.BASE_URL || ''}${producto.url}`;
-              }}
+              // Corregido: usamos backticks para que sea un template string válido
+              onClick={() => (window.location.href = `/AguasMarinas/${producto.url}`)}
             >
               {producto.nombre}
             </h2>
