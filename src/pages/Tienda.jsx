@@ -35,7 +35,10 @@ const Tienda = () => {
                 fontSize: "21px",
                 cursor: "pointer"
               }}
+              onClick={() => {
               window.location.href = `${process.env.PUBLIC_URL || ''}/${producto.url}`;
+            }}
+
 
             >
               {producto.nombre}
