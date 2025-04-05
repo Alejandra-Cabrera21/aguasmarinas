@@ -35,7 +35,8 @@ const Tienda = () => {
                 fontSize: "21px",
                 cursor: "pointer"
               }}
-              onClick={() => window.location.href = `/AguasMarinas/${producto.url}`}
+              window.location.href = `${process.env.PUBLIC_URL || ''}/${producto.url}`;
+
             >
               {producto.nombre}
             </h2>
