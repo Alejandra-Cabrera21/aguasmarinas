@@ -35,7 +35,8 @@ const Tienda = () => {
                 fontSize: "21px",
                 cursor: "pointer"
               }}
-              onClick={() => window.location.href = `/${producto.url}`}
+              onClick={() => window.location.href = `${import.meta.env.BASE_URL}${producto.url}`}
+
             >
               {producto.nombre}
             </h2>
