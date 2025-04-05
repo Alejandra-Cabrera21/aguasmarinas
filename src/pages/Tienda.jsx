@@ -27,22 +27,20 @@ const Tienda = () => {
       <ul>
         {productosFiltrados.map((producto, index) => (
           <li key={index}>
-            <h2
-              style={{
-                textDecoration: "none",
-                color: "inherit",
-                fontWeight: "bold",
-                fontSize: "21px",
-                cursor: "pointer"
-              }}
-              onClick={() => {
+          <h2
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+              fontWeight: "bold",
+              fontSize: "21px",
+              cursor: "pointer"
+            }}
+            onClick={() => {
               window.location.href = `${process.env.PUBLIC_URL || ''}/${producto.url}`;
             }}
-
-
-            >
-              {producto.nombre}
-            </h2>
+          >
+            {producto.nombre}
+          </h2>
           </li>
         ))}
       </ul>
