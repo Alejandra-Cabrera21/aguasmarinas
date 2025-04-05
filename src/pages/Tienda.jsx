@@ -14,7 +14,7 @@ const Tienda = () => {
 
   const productosFiltrados = filtro === "Todos"
     ? productos
-    : productos.filter(p => p.categorias.includes(filtro));
+    : productos.filter((p) => p.categorias.includes(filtro));
 
   return (
     <div className="page-container">
@@ -35,7 +35,10 @@ const Tienda = () => {
                 fontSize: "21px",
                 cursor: "pointer"
               }}
-              onClick={() => window.location.href = `/AguasMarinas/${producto.url}`}
+              onClick={() => {
+                const base = import.meta.env.BASE_URL || '';
+                window.location.href = `${base}${producto.url}`;
+              }}
             >
               {producto.nombre}
             </h2>
