@@ -336,127 +336,6 @@ img {
 
 /* Estilo para móviles */
 @media (max-width: 600px) {
-  * {
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-
-  body {
-    padding-top: 90px;
-    overflow-x: hidden;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    background-color: #030540;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 50;
-  }
-
-  .logo-container img {
-    width: 70px;
-  }
-
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    gap: 4px;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-    color: #fff;
-    text-decoration: none;
-    padding: 6px 8px;
-  }
-
-  nav ul li a:hover {
-    color: #f8f6f6;
-  }
-
-  .cta-button,
-  .btn-detalle,
-  .btn-detallehome {
-    padding: 8px 15px;
-    font-size: 14px;
-    background-color: #f8f6f6;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    margin: 10px auto 0 auto;
-    width: 80%;
-    max-width: 200px;
-  }
-
-  .cta-button:hover,
-  .btn-detalle:hover,
-  .btn-detallehome:hover {
-    background-color: #e1e1e1;
-  }
-
-  .producto {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 90px;
-    width: 100%;
-  }
-
-  .galeria,
-  .detalle {
-    width: 100%;
-    text-align: center;
-  }
-
-  .salina-image-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .salina-img {
-    width: 80%;
-    height: auto;
-    margin-bottom: 15px;
-  }
-
-  .arrow-button {
-    order: -1;
-    margin: 5px;
-  }
-
-  .detalle {
-    padding: 10px;
-  }
-
-  /* Hero Section */
-  .hero,
-  .hero-content {
-    width: 100% !important;
-    padding: 20px !important;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .hero-content {
-    margin-top: 90px;
-  }
-
-  /* SECCIÓN DE PRODUCTOS DESTACADOS */
 .productos-destacados {
   margin-top: 130px; /* más espacio respecto al botón superior */
   margin-bottom: 50px;
@@ -504,6 +383,71 @@ img {
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
+}
+
+  /* Hero Section */
+  .hero,
+  .hero-content {
+    width: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-top: 90px;
+  }
+
+  /* SECCIÓN DE PRODUCTOS DESTACADOS */
+.productos-destacados {
+  margin-top: 120px !important; /* más separación del encabezado anterior */
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.swiper-container-Home {
+  width: 100% !important;
+  margin: auto;
+  padding: 10px 0;
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.productoDes {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(243, 243, 243);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 420px;
+  justify-content: space-between;
+}
+
+.productoDes img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.btn-detallehome {
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  width: 70%;
 }
 
   /* SOBRE NOSOTROS */
