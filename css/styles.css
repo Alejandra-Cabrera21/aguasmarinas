@@ -522,8 +522,8 @@ img {
   }
 
   .nosotros-container {
-  width: 700px;
-  max-width: 350px;
+  width: 90%;
+  max-width: 95%;
   margin: 150px auto 150px;
   padding: 20px;
   background-color: #f8f6f6;
