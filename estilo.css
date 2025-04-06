@@ -744,8 +744,8 @@ img {
 
 .nosotros-container {
   width: 90%;
-  max-width: 800px;
-  margin: 150px auto;
+  max-width: 100%;
+  margin: 120px auto;
   padding: 20px;
   background-color: #f8f6f6;
   color: #333333;
@@ -754,7 +754,10 @@ img {
   text-align: center;
   box-sizing: border-box;
   overflow-x: hidden;
+
+  min-height: 700px; /* ✅ Ajusta este valor según el diseño deseado */
 }
+
 
 .nosotros-text h1 {
   font-size: 2rem;
