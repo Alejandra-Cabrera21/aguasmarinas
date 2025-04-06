@@ -457,55 +457,73 @@ img {
   }
 
   /* SECCIÓN DE PRODUCTOS DESTACADOS */
-.productos-destacados {
-  margin-top: 130px; /* más espacio respecto al botón superior */
-  margin-bottom: 50px;
-  padding: 10px;
-}
+  .productos-destacados {
+    margin-top: 60px; /* más separación desde el bloque anterior */
+    padding: 0 10px;
+  }
 
-.swiper-container-Home {
-  width: 100% !important;
-  margin: 0 auto;
-  position: relative;
-  top: unset;
-  z-index: 0;
-  padding: 0;
-}
+  .productos-destacados h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
 
-.productoDes {
-  width: 100% !important;
-  max-width: 90vw; /* Adaptar al ancho de la pantalla */
-  margin: 0 auto 30px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #e4e4e4;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  min-height: 400px;
-  box-sizing: border-box;
-}
+  /* AJUSTE DEL CONTENEDOR DE CADA PRODUCTO */
+  .productoDes {
+    width: 100%;
+    max-width: 320px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  }
 
-.imagen-producto-destacado {
-  width: 85% !important;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
+  /* IMAGENES ADENTRO DEL CONTENEDOR */
+  .imagen-producto-destacado {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
 
-.btn-detallehome {
-  margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 14px;
-  background: #007bff;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-}
+  /* BOTÓN */
+  .btn-detallehome {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
 
+  /* Swiper ajustes */
+  .swiper-container-Home {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #007bff;
+    top: 45%;
+    transform: scale(0.8);
+  }
   /* SOBRE NOSOTROS */
   .nosotros-content {
     flex-direction: column;
