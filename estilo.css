@@ -526,8 +526,8 @@ img {
 
   /* ✅ Beneficios */
 .nosotros-container {
-  width: 150px;
-  max-width: 50px;
+  width: 90%;
+  max-width: 90%;
   margin: 120px auto;
   padding: 20px;
   background-color: #f8f6f6;
@@ -538,6 +538,7 @@ img {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
 .accordion-button,
 .accordion-buttonnosotros,
 .accordion-content {
