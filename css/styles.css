@@ -568,7 +568,7 @@ img {
   justify-content: center;
   text-align: center;
   color: white;
-  margin-top: 90px;
+  margin-top: 180px;
 }
 
 .hero-content {
@@ -576,8 +576,8 @@ img {
   padding: 30px;
   max-width: 1000px;
   border-radius: 10px;
-  margin-top: 90px;
-  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-bottom: 140px;
 }
 
 .cta-button {
