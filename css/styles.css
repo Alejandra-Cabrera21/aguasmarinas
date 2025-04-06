@@ -521,17 +521,19 @@ img {
     align-items: center;
   }
 
-  .nosotros-container {
+.nosotros-container {
   width: 90%;
-  max-width: 95%;
-  margin: 150px auto 150px;
+  max-width: 100%;
+  margin: 120px auto 100px;
   padding: 20px;
   background-color: #f8f6f6;
   color: #333333;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: border-box; /* ✅ importante para evitar desbordes */
 }
+
 
   .beneficio-card {
     width: 90%;
