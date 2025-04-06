@@ -743,8 +743,8 @@ img {
 
 
 .nosotros-container {
-  width: 90%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1000px;
   height: 100px; /* ✅ Altura fija */
   margin: 120px auto;
   padding: 20px;
