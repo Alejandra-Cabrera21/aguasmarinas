@@ -744,7 +744,8 @@ img {
 
 .nosotros-container {
   width: 90%;
-  max-width: 100%;
+  max-width: 700px;
+  height: 500px; /* ✅ Altura fija */
   margin: 120px auto;
   padding: 20px;
   background-color: #f8f6f6;
@@ -753,10 +754,19 @@ img {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   box-sizing: border-box;
-  overflow-x: hidden;
-
-  min-height: 700px; /* ✅ Ajusta este valor según el diseño deseado */
+  overflow-y: auto; /* ✅ Permite scroll interno vertical */
+  overflow-x: hidden; /* ✅ Evita scroll horizontal */
 }
+
+/* ✅ Para evitar que .accordion-content se expanda indefinidamente */
+.accordion-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-height: 300px; /* opcional, si quieres limitar aún más */
+  overflow-y: auto;
+}
+
 
 
 .nosotros-text h1 {
