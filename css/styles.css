@@ -539,9 +539,11 @@ img {
 .accordion-content {
   width: 100% !important;
   max-width: 100%;
-  box-sizing: border-box;
   margin: 10px auto;
+  padding: 15px;
+  box-sizing: border-box;
 }
+
 
 
 
