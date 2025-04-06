@@ -1,5 +1,10 @@
 /* Estilos para el logo */
 /* Estilos para la barra de navegación */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
