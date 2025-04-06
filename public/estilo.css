@@ -524,28 +524,17 @@ img {
     align-items: center;
   }
 
-.nosotros-container {
-  width: 90%;
-  max-width: 100%;
-  margin: 120px auto;
-  padding: 20px;
-  background-color: #f8f6f6;
-  color: #333333;
-  border-radius: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-.accordion-button,
-.accordion-buttonnosotros,
-.accordion-content {
-  width: 100% !important;
-  max-width: 100%;
-  margin: 10px auto;
-  padding: 15px;
-  box-sizing: border-box;
-}
+  .nosotros-container,
+  .nosotros-section,
+  .accordion-button,
+  .accordion-buttonnosotros,
+  .accordion-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 10px auto;
+  }
 
 
 
@@ -754,15 +743,17 @@ img {
 
 
 .nosotros-container {
-  width: 700px;
-  max-width: 1200px;
-  margin: 150px auto 150px;
+  width: 90%;
+  max-width: 800px;
+  margin: 150px auto;
   padding: 20px;
   background-color: #f8f6f6;
   color: #333333;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .nosotros-text h1 {
@@ -774,56 +765,29 @@ img {
 }
 
 .nosotros-section {
-  width: 100%; /* Reduce el ancho */
-  max-width: 800px; /* Limita el tamaño en pantallas grandes */
-  margin: 10px auto; /* Centra los cuadros */
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  box-sizing: border-box;
   background: #f8f6f6;
 
 }
 
-.accordion-button {
-  
-  width: 700px;
-  background-color: #0077b6;
-  color: white;
+.accordion-button,
+.accordion-buttonnosotros,
+.accordion-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px auto;
   padding: 15px;
-  border: none;
-  cursor: pointer;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-  display: block; /* Asegura el comportamiento de bloque */
-  margin: 10px auto; /* Centra horizontalmente */
-  text-align: left;
-}
-
-.accordion-buttonnosotros {
-  width: 700px;
-  background-color: #0077b6;
-  color: white;
-  padding: 15px;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  box-sizing: border-box;
 }
 
 .accordion-button:hover {
   background-color: #005f99;
 }
 
-.accordion-content {
-  width: 670px;
-  background-color: white;
-  padding: 15px;
-  margin: 5px auto; /* Centra horizontalmente */
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Centra el texto */
-  display: block; /* Asegura que se comporte como un bloque */
-}
+
 
 .accordion-content ul {
   list-style: none;
