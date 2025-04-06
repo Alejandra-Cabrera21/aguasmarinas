@@ -332,6 +332,27 @@ img {
   .container {
     width: 90%;
   }
+  .nosotros-container {
+  max-width: 700px;   /* Ajusta según el diseño general */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.accordion-buttonnosotros {
+  width: 100%;              /* Que no se salga del contenedor */
+  max-width: 100%;          /* También útil para prevenir desbordes */
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #007baf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 }
 
 /* Estilo para móviles */
