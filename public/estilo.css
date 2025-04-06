@@ -529,7 +529,8 @@ img {
     width: 95%;
     padding: 15px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 25px
   }
 
   .blog-section {
