@@ -435,16 +435,16 @@ img {
   
 /* INICIA CODIGO PARA "Productos Destacados" */
 
-  .productoDesss {
-    width: 92vw !important;   /* ✅ Se adapta al ancho de la pantalla */
-    height: auto !important;  /* ✅ Para que no sea tan alto */
-    padding: 12px !important;
-  }
+.productoDesss {
+  width: 92vw !important;
+  height: auto !important;
+  padding: 12px;
+}
 
-  .productoDesss img,
-  .imagen-producto-destacado {
-    height: 180px !important; /* ✅ Imagen más baja */
-  }
+.productoDesss img,
+.imagen-producto-destacado {
+  height: 180px !important;
+}
 
   .btn-detallehome {
     width: 100% !important;
@@ -1194,4 +1194,11 @@ img {
   z-index: 10;
   width: 30px;
   height: 30px;
+}
+
+.envoltorioAncho {
+  max-width: unset !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
