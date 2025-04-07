@@ -1183,17 +1183,18 @@ img {
   list-style-type: disc;
 }
 
+/* Contenedor para centrar el contenido del slide */
 .contenedorProductoDes {
-  width: 100vw;
   display: flex;
   justify-content: center;
-  overflow: visible;
+  align-items: center;
+  width: 100%;
 }
 
+/* Tamaño fijo del contenedor del producto */
 .productoDesss {
-  width: 320px;           /* Ancho fijo */
-  height: 420px;          /* Alto fijo */
-  margin: 0 auto 30px auto;
+  width: 320px;
+  height: 420px;
   padding: 15px;
   background: #f9f9f9;
   border-radius: 12px;
@@ -1203,9 +1204,17 @@ img {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  margin: auto; /* ⬅️ Por si acaso, esto ayuda al centrado */
 }
 
-.productoDesss img,
+.productoDesss img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 .imagen-producto-destacado {
   width: 100%;
   height: 250px;                /* Alto fijo para la imagen */
