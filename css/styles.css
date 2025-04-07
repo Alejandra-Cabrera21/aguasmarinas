@@ -456,11 +456,11 @@ img {
   }
 
   .swiper-button-prev {
-    left: 15px;
+    left: -15px;
   }
 
   .swiper-button-next {
-    right: 15px;
+    right: -15px;
   }
 
 /* TERMINA CODIGO PARA "Productos Destacados" */
