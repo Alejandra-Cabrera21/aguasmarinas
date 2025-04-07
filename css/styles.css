@@ -440,7 +440,7 @@ img {
   }
 
   .productoDesss {
-    width: 90vw;         /* más ancho */
+    width: 90%;         /* más ancho */
     height: auto;        /* menos alto */
     padding: 12px;
   }
