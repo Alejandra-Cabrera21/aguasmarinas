@@ -1154,3 +1154,16 @@ img {
   background-color: #333 !important;
   color: white !important;
 }
+
+.justificado {
+  text-align: justify;
+}
+
+.lista-valores {
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  list-style-type: disc;
+}
+
