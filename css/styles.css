@@ -433,46 +433,36 @@ img {
 
   /* INICIA CODIGO PARA "Productos Destacados" */
 
+/* Contenedor horizontal */
+.productos-destacados .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.swiper-slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  padding: 0 10px;
+}
+
+/* Tarjeta más cómoda */
 .productoDesss {
-    width: 98vw !important;
-    height: 280px !important;
-    padding: 12px;
-  }
-  
-  .productoDesss img,
-  .imagen-producto-destacado {
-    height: 200px !important;
-  }
+  width: 90vw;
+  min-width: 260px;
+  height: auto;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f9f9f9;
+}
 
-  .btn-detallehome {
-    width: 100% !important;
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .contenedorProductoDes {
-    width: 100vw !important;
-    padding: 0 10px;
-  }
-
-    .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 26px !important;  /* 🔹 cambia el tamaño del icono */
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .swiper-button-prev {
-    left: -12px;
-  }
-
-  .swiper-button-next {
-    right: -12px;
-  }
+/* Imagen más corta */
+.productoDesss img {
+  height: 180px;
+  object-fit: contain;
+}
   
   /* TERMINA CODIGO PARA "Productos Destacados" */
 
