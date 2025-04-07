@@ -461,9 +461,17 @@ img {
 
 /* Imagen más corta */
 .productoDesss img {
-  height: 180px;
+  height: 140px;
   object-fit: contain;
 }
+
+    .swiper-button-prev {
+    left: -12px;
+  }
+
+  .swiper-button-next {
+    right: -12px;
+  }
   
   /* TERMINA CODIGO PARA "Productos Destacados" */
   
