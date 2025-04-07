@@ -456,6 +456,13 @@ img {
     padding: 0 10px;
   }
 
+    .swiper-button-prev,
+  .swiper-button-next {
+    width: 24px;      /* 🔹 un poco más pequeñas */
+    height: 24px;
+    transform: scale(0.8); /* opcional: también reduce el icono */
+  }
+  
   .swiper-button-prev {
     left: -10px;
   }
