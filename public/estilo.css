@@ -445,9 +445,9 @@ img {
   }
 
   .productoDes {
-    width: 500px; /* Ajusta según necesidad */
-    height: 350px; /* Ajusta según necesidad */
-    max-width: 550px;
+    width: 90vw;           /* ✅ Más responsivo que píxeles fijos */
+    max-width: 90vw;       /* ✅ Evita límites en pantallas pequeñas */
+    height: 400px;         /* ✅ Aumenta la altura si quieres más espacio */
     margin: 0 auto 30px auto;
     padding: 15px;
     background: #f9f9f9;
@@ -457,14 +457,13 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 250px;
     box-sizing: border-box;
   }
 
   .productoDes img,
   .imagen-producto-destacado {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 60%;            /* ✅ Ocupa mayor parte del alto disponible */
     object-fit: contain;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -488,7 +487,8 @@ img {
   justify-content: center;
   width: 100% !important;
   position: relative;
-  padding: 0 10px;
+  padding: 0 60px;       /* ✅ Espacio amplio a los lados del contenedor gris */
+  box-sizing: border-box;
 }
 
 
@@ -503,11 +503,11 @@ img {
 }
   
 .swiper-button-prev {
-  left: 20px;
+  left: 15px;
 }
 
 .swiper-button-next {
-  right: 20px;
+  right: 15px;
 }
 
   
