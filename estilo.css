@@ -431,35 +431,6 @@ img {
   }
 
 /* ✅ Ajustes imágenes en "Productos Destacados" */
-  .productoDesss {
-    width: 90vw;          /* ✅ Más ancho en móviles */
-    height: auto;         /* ✅ Altura automática */
-    padding: 10px;
-  }
-
-  .productoDesss img,
-  .imagen-producto-destacado {
-    height: 200px;        /* ✅ Imagen más corta */
-  }
-
-  .swiper-button-prev {
-    left: 10px;
-  }
-
-  .swiper-button-next {
-    right: 10px;
-  }
-
-  .contenedorProductoDes {
-    margin: 0 10px;
-    width: calc(100% - 20px);
-  }
-
-  .btn-detallehome {
-    font-size: 14px;
-    padding: 10px;
-    width: 90%;
-  }
 
   
 
