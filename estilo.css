@@ -485,7 +485,7 @@ img {
 .swiper-slide {
   display: flex;
   justify-content: center;
-  width: 100% !important;
+  width:  auto !important;
   position: relative;
   padding: 0 10px;
 }
