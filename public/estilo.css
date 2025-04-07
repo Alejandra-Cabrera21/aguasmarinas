@@ -503,11 +503,11 @@ img {
 }
 
 .swiper-button-prev {
-  left: calc(5vw);
+  left: 0;
 }
 
 .swiper-button-next {
-  left: calc(5vw);
+  left: 0;
 }
 
   
