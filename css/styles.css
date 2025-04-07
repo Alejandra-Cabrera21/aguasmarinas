@@ -458,7 +458,7 @@ img {
 
     .swiper-button-prev::after,
   .swiper-button-next::after {
-    font-size: 40px !important;  /* 🔹 cambia el tamaño del icono */
+    font-size: 26px !important;  /* 🔹 cambia el tamaño del icono */
   }
 
   .swiper-button-prev,
