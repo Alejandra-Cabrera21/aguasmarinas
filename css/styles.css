@@ -445,7 +445,7 @@ img {
   }
 
   .productoDes {
-    width: 90vw%;
+    width: 100%;
     max-width: 320px;
     margin: 0 auto 30px auto;
     padding: 15px;
@@ -456,7 +456,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 255px;
+    min-height: 250px;
     box-sizing: border-box;
   }
 
@@ -479,7 +479,7 @@ img {
 
   .swiper-container-Home {
     width: 100%;
-    padding: 0 20px 30px 20px; 
+    padding: 0 40px 30px 40px; 
   }
 
 .swiper-slide {
@@ -487,7 +487,7 @@ img {
   justify-content: center;
   width: 100% !important;
   position: relative;
-  padding: 0;
+  padding: 0 10px;
 }
 
 
@@ -499,7 +499,6 @@ img {
   z-index: 10;
   width: 30px;
   height: 30px;
-  margin: 0 5px;
 }
 
 .swiper-button-prev {
@@ -507,7 +506,7 @@ img {
 }
 
 .swiper-button-next {
-  left: 0;
+  right: 0;
 }
 
 
