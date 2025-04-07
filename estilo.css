@@ -456,18 +456,23 @@ img {
     padding: 0 10px;
   }
 
+    .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px !important;  /* 🔹 cambia el tamaño del icono */
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+  
   .swiper-button-prev {
     left: -10px;
-    width: 18px;      /* 🔹 un poco más pequeñas */
-    height: 18px;
-    transform: scale(0.6); /* opcional: también reduce el icono */
   }
 
   .swiper-button-next {
     right: -10px;
-    width: 18px;      /* 🔹 un poco más pequeñas */
-    height: 18px;
-    transform: scale(0.6); /* opcional: también reduce el icono */
   }
   
 /* TERMINA CODIGO PARA "Productos Destacados" */
