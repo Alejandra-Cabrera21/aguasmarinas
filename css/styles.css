@@ -435,18 +435,9 @@ img {
 /* INICIA CODIGO PARA "Productos Destacados" */
 
 .productoDesss {
-    width: 100% !important;
+    width: 98vw !important;
     height: 350px !important;
     padding: 12px;
-    background: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1; /* 🔽 Debajo de las flechas */
   }
   
   .productoDesss img,
@@ -461,36 +452,20 @@ img {
   }
 
   .contenedorProductoDes {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 98vw;
-    max-width: 500px;
-    margin: auto;
-    padding: 0 30px;
-    box-sizing: border-box;
-    z-index: 0; /* 🔄 Asegura el contexto z-index */
+    padding: 0 10px;
   }
 
-    .swiper-button-prev,
-  .swiper-button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1; /* ✅ Encima de todo */
-    width: 30px;
-    height: 30px;
-    color: #007bff;
-  }
   .swiper-button-prev {
     left: -15px;
+    z-index: 1;
   }
 
   .swiper-button-next {
     right: -15px;
+    z-index: 1;
   }
-/* TERMINA CODIGO PARA "Productos Destacados" */
+  
+  /* TERMINA CODIGO PARA "Productos Destacados" */
 
 
   
