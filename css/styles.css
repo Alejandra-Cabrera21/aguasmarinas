@@ -481,10 +481,12 @@ img {
     padding-bottom: 30px;
   }
 
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+}
+
 
   .swiper-button-prev,
   .swiper-button-next {
