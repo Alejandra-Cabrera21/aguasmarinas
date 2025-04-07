@@ -435,7 +435,7 @@ img {
 /* INICIA CODIGO PARA "Productos Destacados" */
 
 .productoDesss {
-  width: 90px !important;
+  width: 100vw !important;
   height: auto !important;
   padding: 12px;
 }
