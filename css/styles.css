@@ -479,6 +479,7 @@ img {
   .swiper-container-Home {
     width: 100%;
     padding-bottom: 30px;
+    padding: 0 40px 30px 40px; 
   }
 
 .swiper-slide {
@@ -486,16 +487,30 @@ img {
   justify-content: center;
   width: 100% !important;
   position: relative;
+  padding: 0 10px;
 }
 
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: #007bff;
-    top: 45%;
-    transform: scale(0.8);
-  }
+.swiper-button-prev,
+.swiper-button-next {
+  color: #007bff;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+}
 
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+
+  
   /* ✅ Sobre Nosotros */
   .nosotros-content {
     display: flex;
