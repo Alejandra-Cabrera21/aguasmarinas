@@ -433,10 +433,11 @@ img {
   
   /* ✅ Ajustes imágenes en "Productos Destacados" */
   .productos-destacados {
-    margin-top: 200px;
-    margin-bottom: 40px;
-    padding: 20px;
-    text-align: center;
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
 
   .productos-destacados h2 {
