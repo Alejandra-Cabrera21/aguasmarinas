@@ -1039,7 +1039,7 @@ img {
   position: sticky; /* Hace que el swiper se quede fijo solo dentro de la sección */
   top: 80px; /* Ajusta este valor para que se quede debajo del navbar */
   z-index: -1; /* Asegura que el swiper esté detrás del navbar */
-    padding: 10px;
+    padding: 1px;
 }
 .productos-destacados .producto img {
   width: 100px; /* Ajusta el tamaño según necesites */
@@ -1063,8 +1063,8 @@ img {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   max-width: 900px;
-  width: 450px; /* Ajusta según necesidad */
-  height: 450px; /* Ajusta según necesidad */
+  width: 350px; /* Ajusta según necesidad */
+  height: 350px; /* Ajusta según necesidad */
 }
 .btn-detallehome {
   display: inline-block;
