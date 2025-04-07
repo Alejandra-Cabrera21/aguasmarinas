@@ -13,6 +13,7 @@ const Nosotros = () => {
       <h1 className="faq-title">Sobre Nosotros</h1>
 
       <div className="faq-list">
+        {/* Misión */}
         <div className={`faq-item ${activeSection === "mision" ? "active" : ""}`}>
           <button className="faq-question" onClick={() => toggleSection("mision")}>
             Misión
@@ -30,6 +31,7 @@ const Nosotros = () => {
           </div>
         </div>
 
+        {/* Visión */}
         <div className={`faq-item ${activeSection === "vision" ? "active" : ""}`}>
           <button className="faq-question" onClick={() => toggleSection("vision")}>
             Visión
@@ -51,13 +53,14 @@ const Nosotros = () => {
           </div>
         </div>
 
+        {/* Valores */}
         <div className={`faq-item ${activeSection === "valores" ? "active" : ""}`}>
           <button className="faq-question" onClick={() => toggleSection("valores")}>
             Valores
             <span className="faq-icon">{activeSection === "valores" ? "▲" : "▼"}</span>
           </button>
           <div className="faq-answer" style={{ display: activeSection === "valores" ? "block" : "none" }}>
-            <ul>
+            <ul style={{ paddingLeft: "1.5rem", textAlign: "left" }}>
               <li><strong>Calidad:</strong> Compromiso con la excelencia en cada producto.</li>
               <li><strong>Responsabilidad:</strong> Cumplimiento de normas de higiene y control de calidad.</li>
               <li><strong>Innovación:</strong> Desarrollo continuo de nuevos productos y mejoras en los procesos.</li>
@@ -69,6 +72,7 @@ const Nosotros = () => {
           </div>
         </div>
 
+        {/* Historia */}
         <div className={`faq-item ${activeSection === "historia" ? "active" : ""}`}>
           <button className="faq-question" onClick={() => toggleSection("historia")}>
             Nuestra Historia
