@@ -937,7 +937,7 @@ img {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   overflow-y: auto; /* Agrega scroll si el contenido es muy largo */
-  height: 700px; /* Ajusta la altura fija */
+  height: 600px; /* Ajusta la altura fija */
 }
 
 
