@@ -457,13 +457,16 @@ img {
   }
 
   .swiper-button-prev {
-    left: 5px;
+    left: -25px;
   }
 
   .swiper-button-next {
-    right: 5px;
+    right: -25px;
   }
 
+    .envoltorioAncho {
+    max-width: 95vw;
+  }
 /* TERMINA CODIGO PARA "Productos Destacados" */
 
 
@@ -1036,6 +1039,8 @@ img {
   margin-top: 1px; /* Reduce el espacio entre la imagen y el botón */
   padding: 10px 15px;
   font-size: 14px;
+  width: 90%;
+  text-align: center;
 }
 
 .nosotros-text h1 {
@@ -1145,12 +1150,13 @@ img {
 
 /* Contenedor para centrar el contenido del slide */
 .contenedorProductoDes {
+  position: relative;           /* 👈 Necesario para posicionar flechas */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 0 20px; /* espacio para flechas */
-  box-sizing: border-box;
+  width: auto;
+  max-width: 95vw;
+  margin: auto;
 }
 
 /* Tamaño fijo del contenedor del producto */
@@ -1194,10 +1200,19 @@ img {
   z-index: 10;
   width: 30px;
   height: 30px;
+  position: absolute;        /* 👈 Para que estén al lado */
+
+}
+.swiper-button-prev {
+  left: -40px;
 }
 
+/* Flecha derecha: afuera del borde derecho */
+.swiper-button-next {
+  right: -40px;
+}
 .envoltorioAncho {
-  max-width: unset !important;
+  max-width: 400px;
   width: 100%;
   display: flex;
   justify-content: center;
