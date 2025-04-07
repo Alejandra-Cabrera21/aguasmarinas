@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import "../../css/styles.css";
-import logo from "../assets/logo.png"; // Este sí puede quedar así
+import logo from "../assets/logo.png";
 
 const Home = () => {
   const base = import.meta.env.BASE_URL;
@@ -43,6 +43,8 @@ const Home = () => {
     }
   ];
 
+  const esPantallaPequena = window.innerWidth <= 600;
+
   return (
     <div className="blog-container">
       <section className="hero">
@@ -55,18 +57,33 @@ const Home = () => {
 
       <section className="productos-destacados">
         <h2>Productos Destacados</h2>
-        <Swiper navigation={true} modules={[Navigation]} className="swiper-container-Home">
-          {productosDestacados.map((producto, index) => (
-            <SwiperSlide key={index}>
-              <div className="contenedorProductoDes"> {/* 🆕 nuevo contenedor */}
-                <div className="productoDesss">       {/* ✅ cambiado el nombre */}
-                  <img src={producto.src} alt={`Producto ${index + 1}`} className="imagen-producto-destacado" />
-                  <Link to="/tienda" className="btn-detallehome">Ver más</Link>
-                </div>
+        {esPantallaPequena ? (
+          <div className="lista-productos-movil">
+            {productosDestacados.map((producto, index) => (
+              <div className="productoCardMovil" key={index}>
+                <img
+                  src={producto.src}
+                  alt={`Producto ${index + 1}`}
+                  className="imagen-producto-destacado"
+                />
+                <Link to="/tienda" className="btn-detallehome">Ver más</Link>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </div>
+        ) : (
+          <Swiper navigation={true} modules={[Navigation]} className="swiper-container-Home">
+            {productosDestacados.map((producto, index) => (
+              <SwiperSlide key={index}>
+                <div className="contenedorProductoDes">
+                  <div className="productoDesss">
+                    <img src={producto.src} alt={`Producto ${index + 1}`} className="imagen-producto-destacado" />
+                    <Link to="/tienda" className="btn-detallehome">Ver más</Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </section>
 
       <section className="sobre-nosotros">
