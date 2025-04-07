@@ -344,6 +344,7 @@ img {
 @media (max-width: 600px) {
   * {
     box-sizing: border-box;
+    max-width: 100%;
   }
 
   body {
@@ -445,7 +446,7 @@ img {
 
   .productoDes {
     width: 90vw;               /* ✅ Toma el 90% del ancho de la pantalla */
-    max-width: none;           /* ✅ Evita que se limite a 420px */
+    max-width: none !important;
     margin: 0 auto 30px auto;
     padding: 15px;
     background: #f9f9f9;
