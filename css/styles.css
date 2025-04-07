@@ -436,7 +436,7 @@ img {
 
   .productoDesss {
     width: 98vw !important;
-    height: auto !important;
+    height: 350px !important;
     padding: 12px;
   }
   
@@ -456,11 +456,11 @@ img {
   }
 
   .swiper-button-prev {
-    left: 5px;
+    left: 0px;
   }
 
   .swiper-button-next {
-    right: 5px;
+    right: 0px;
   }
 
 /* TERMINA CODIGO PARA "Productos Destacados" */
@@ -1139,14 +1139,16 @@ img {
   list-style-type: disc;
 }
 
+
+
+
+
 /* Contenedor para centrar el contenido del slide */
 .contenedorProductoDes {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0 20px; /* espacio para flechas */
-  box-sizing: border-box;
 }
 
 /* Tamaño fijo del contenedor del producto */
@@ -1173,12 +1175,14 @@ img {
   margin-bottom: 10px;
 }
 
+
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100% !important;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Flechas */
@@ -1188,8 +1192,6 @@ img {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 30px;
-  height: 30px;
 }
 
 .envoltorioAncho {
