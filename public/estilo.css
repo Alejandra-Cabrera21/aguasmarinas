@@ -452,6 +452,7 @@ img {
   }
 
   .contenedorProductoDes {
+    width: 99vw !important;
     padding: 0 10px;
   }
 
