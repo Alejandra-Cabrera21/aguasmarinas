@@ -1039,7 +1039,7 @@ img {
   position: sticky; /* Hace que el swiper se quede fijo solo dentro de la sección */
   top: 80px; /* Ajusta este valor para que se quede debajo del navbar */
   z-index: -1; /* Asegura que el swiper esté detrás del navbar */
-    padding: 1px;
+    padding: 10px;
 }
 .productos-destacados .producto img {
   width: 100px; /* Ajusta el tamaño según necesites */
@@ -1047,7 +1047,7 @@ img {
   
 }
 .imagen-producto-destacado {
-  width: 250px; /* Tamaño uniforme */
+  width: 220px; /* Tamaño uniforme */
   height: auto;
   margin-bottom: 5px;
   padding: 5px;
