@@ -432,7 +432,18 @@ img {
   }
 
 /* ✅ Ajustes imágenes en "Productos Destacados" */
-.swiper-button-prev {
+  .productoDesss {
+    width: 90vw;          /* ✅ Más ancho en móviles */
+    height: auto;         /* ✅ Altura automática */
+    padding: 10px;
+  }
+
+  .productoDesss img,
+  .imagen-producto-destacado {
+    height: 200px;        /* ✅ Imagen más corta */
+  }
+
+  .swiper-button-prev {
     left: 10px;
   }
 
@@ -442,18 +453,7 @@ img {
 
   .contenedorProductoDes {
     margin: 0 10px;
-    width: calc(100% - 20px); /* ✅ más espacio para el contenido */
-  }
-
-  .productoDesss {
-    width: 95vw;             /* ✅ mucho más ancho en móvil */
-    height: auto;            /* ✅ altura automática */
-    padding: 15px;
-  }
-
-  .productoDesss img,
-  .imagen-producto-destacado {
-    height: 180px;           /* ✅ altura menor para imagen */
+    width: calc(100% - 20px);
   }
 
   .btn-detallehome {
