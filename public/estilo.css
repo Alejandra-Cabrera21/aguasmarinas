@@ -454,6 +454,8 @@ img {
 
   .contenedorProductoDes {
     padding: 0 10px;
+      width: 99vw !important;
+      height: 360px !important;
   }
 
   .swiper-button-prev {
