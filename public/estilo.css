@@ -436,7 +436,7 @@ img {
 
 .productoDesss {
     width: 98vw !important;
-    height: 250px !important;
+    height: 280px !important;
     padding: 12px;
   }
   
@@ -452,16 +452,16 @@ img {
   }
 
   .contenedorProductoDes {
-    width: 100% !important;
+    width: 100vw !important;
     padding: 0 10px;
   }
 
   .swiper-button-prev {
-    left: -12px;
+    left: -11px;
   }
 
   .swiper-button-next {
-    right: -12px;
+    right: -11px;
   }
   
 /* TERMINA CODIGO PARA "Productos Destacados" */
