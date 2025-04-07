@@ -928,7 +928,7 @@ img {
 /*preguntas frecuentes*/
 .faq-container {
   width: 800px; /* Tamaño fijo */
-  max-width: 100%; /* Para que sea responsive */
+  max-width: 95%; /* Para que sea responsive */
   margin: 150px auto 50px; /* Aumenta el margen superior para mayor separación */
   padding: 20px;
   background: #2b2a2a;
