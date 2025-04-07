@@ -445,9 +445,9 @@ img {
   }
 
   .productoDes {
-    width: 90vw;           /* ✅ Más responsivo que píxeles fijos */
-    max-width: 90vw;       /* ✅ Evita límites en pantallas pequeñas */
-    height: 400px;         /* ✅ Aumenta la altura si quieres más espacio */
+    width: 350;           /* ✅ Más responsivo que píxeles fijos */
+    max-width: 400vw;       /* ✅ Evita límites en pantallas pequeñas */
+    height: 250px;         /* ✅ Aumenta la altura si quieres más espacio */
     margin: 0 auto 30px auto;
     padding: 15px;
     background: #f9f9f9;
