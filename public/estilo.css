@@ -485,14 +485,16 @@ img {
   display: flex;
   justify-content: center;
   width: 100% !important;
+  position: relative;
 }
 
 
   .swiper-button-prev,
   .swiper-button-next {
     color: #007bff;
-    top: 45%;
-    transform: scale(0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
   }
 
   /* ✅ Sobre Nosotros */
