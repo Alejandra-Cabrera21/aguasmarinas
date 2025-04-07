@@ -445,9 +445,9 @@ img {
   }
 
   .productoDes {
-    width: 350px; /* Ajusta según necesidad */
+    width: 500px; /* Ajusta según necesidad */
     height: 350px; /* Ajusta según necesidad */
-    max-width: 360px;
+    max-width: 550px;
     margin: 0 auto 30px auto;
     padding: 15px;
     background: #f9f9f9;
