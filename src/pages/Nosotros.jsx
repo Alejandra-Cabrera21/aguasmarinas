@@ -60,15 +60,13 @@ const Nosotros = () => {
             <span className="faq-icon">{activeSection === "valores" ? "▲" : "▼"}</span>
           </button>
           <div className="faq-answer" style={{ display: activeSection === "valores" ? "block" : "none" }}>
-            <ul className="lista-valores">
-              <li><strong>Calidad:</strong> Compromiso con la excelencia en cada producto.</li>
-              <li><strong>Responsabilidad:</strong> Cumplimiento de normas de higiene y control de calidad.</li>
-              <li><strong>Innovación:</strong> Desarrollo continuo de nuevos productos y mejoras en los procesos.</li>
-              <li><strong>Liderazgo:</strong> Posicionamiento como la empresa salinera líder en Guatemala.</li>
-              <li><strong>Compromiso con el cliente:</strong> Atención profesional y servicio excepcional.</li>
-              <li><strong>Trabajo en equipo:</strong> Un grupo humano capacitado que impulsa el éxito de la empresa.</li>
-              <li><strong>Sostenibilidad:</strong> Conservación del proceso artesanal y respeto por el medio ambiente.</li>
-            </ul>
+            <p className="justificado"><strong>Calidad:</strong> Compromiso con la excelencia en cada producto.</p>
+            <p className="justificado"><strong>Responsabilidad:</strong> Cumplimiento de normas de higiene y control de calidad.</p>
+            <p className="justificado"><strong>Innovación:</strong> Desarrollo continuo de nuevos productos y mejoras en los procesos.</p>
+            <p className="justificado"><strong>Liderazgo:</strong> Posicionamiento como la empresa salinera líder en Guatemala.</p>
+            <p className="justificado"><strong>Compromiso con el cliente:</strong> Atención profesional y servicio excepcional.</p>
+            <p className="justificado"><strong>Trabajo en equipo:</strong> Un grupo humano capacitado que impulsa el éxito de la empresa.</p>
+            <p className="justificado"><strong>Sostenibilidad:</strong> Conservación del proceso artesanal y respeto por el medio ambiente.</p>
           </div>
         </div>
 
