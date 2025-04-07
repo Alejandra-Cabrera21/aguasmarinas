@@ -445,7 +445,8 @@ img {
   }
 
   .productoDes {
-    width: 320px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto 30px auto;
     padding: 15px;
     background: #f9f9f9;
@@ -478,7 +479,8 @@ img {
 
   .swiper-container-Home {
     width: 100%;
-    padding: 0 40px 30px 40px; 
+    padding: 0 10px 30px 10px;
+    box-sizing: border-box;
   }
 
 .swiper-slide {
@@ -502,11 +504,11 @@ img {
 }
 
 .swiper-button-prev {
-  left: 15px;
+  left: 20px;
 }
 
 .swiper-button-next {
-  right: 15px;
+  right: 20px;
 }
 
 
