@@ -430,9 +430,42 @@ img {
     text-align: center;
   }
 
-/* ✅ Ajustes imágenes en "Productos Destacados" */
 
   
+/* INICIA CODIGO PARA "Productos Destacados" */
+
+   .contenedorProductoDes {
+    padding: 0 10px;
+  }
+
+  .productoDesss {
+    width: 90vw;         /* más ancho */
+    height: auto;        /* menos alto */
+    padding: 12px;
+  }
+
+  .productoDesss img,
+  .imagen-producto-destacado {
+    height: 200px;       /* imagen más corta */
+  }
+
+  .btn-detallehome {
+    font-size: 14px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .swiper-button-prev {
+    left: 8px;
+  }
+
+  .swiper-button-next {
+    right: 8px;
+  } 
+
+
+/* TERMINA CODIGO PARA "Productos Destacados" */
+
 
   
   /* ✅ Sobre Nosotros */
@@ -1112,8 +1145,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(100% - 80px);
-  margin: 0 40px;
+  width: 100%;
+  padding: 0 20px; /* espacio para flechas */
   box-sizing: border-box;
 }
 
@@ -1130,7 +1163,6 @@ img {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  margin: auto;
 }
 
 .productoDesss img,
