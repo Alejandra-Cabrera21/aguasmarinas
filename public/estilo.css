@@ -436,7 +436,7 @@ img {
 
 .productoDesss {
     width: 98vw !important;
-    height: 350px !important;
+    height: 250px !important;
     padding: 12px;
   }
   
@@ -452,7 +452,7 @@ img {
   }
 
   .contenedorProductoDes {
-    width: 100vw !important;
+    width: 100% !important;
     padding: 0 10px;
   }
 
