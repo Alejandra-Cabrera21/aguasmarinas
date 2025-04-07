@@ -17,12 +17,12 @@ const Home = () => {
     "refinada2.jpg",
     "salrefinadab.jpg"
   ].map(img => ({
-    src: `${base}img/${img}` // ✅ Corrección aquí
+    src: `${base}img/${img}`
   }));
 
   const beneficios = [
     {
-      img: `${base}img/purezaa.jpg`, // ✅ Corrección aquí
+      img: `${base}img/purezaa.jpg`,
       title: "Máxima Pureza",
       desc: "Garantizamos la más alta calidad en cada grano."
     },
@@ -58,9 +58,11 @@ const Home = () => {
         <Swiper navigation={true} modules={[Navigation]} className="swiper-container-Home">
           {productosDestacados.map((producto, index) => (
             <SwiperSlide key={index}>
-              <div className="productoDes">
-                <img src={producto.src} alt={`Producto ${index + 1}`} className="imagen-producto-destacado" />
-                <Link to="/tienda" className="btn-detallehome">Ver más</Link>
+              <div className="contenedorProductoDes"> {/* 🆕 nuevo contenedor */}
+                <div className="productoDesss">       {/* ✅ cambiado el nombre */}
+                  <img src={producto.src} alt={`Producto ${index + 1}`} className="imagen-producto-destacado" />
+                  <Link to="/tienda" className="btn-detallehome">Ver más</Link>
+                </div>
               </div>
             </SwiperSlide>
           ))}
@@ -70,7 +72,7 @@ const Home = () => {
       <section className="sobre-nosotros">
         <h2>Sobre Nosotros</h2>
         <div className="nosotros-content">
-          <img src={`${base}img/nosotros1.jpg`} alt="Nuestra Fábrica" /> {/* ✅ Corrección */}
+          <img src={`${base}img/nosotros1.jpg`} alt="Nuestra Fábrica" />
           <p>Somos una empresa dedicada a la producción y comercialización de sal de alta pureza, con compromiso en la calidad y el medio ambiente.</p>
         </div>
       </section>
