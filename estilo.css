@@ -434,16 +434,16 @@ img {
   
 /* INICIA CODIGO PARA "Productos Destacados" */
 
-.productoDesss {
-  width: 150vw !important;
-  height: auto !important;
-  padding: 12px;
-}
-
-.productoDesss img,
-.imagen-producto-destacado {
-  height: 180px !important;
-}
+  .productoDesss {
+    width: 98vw !important;
+    height: auto !important;
+    padding: 12px;
+  }
+  
+  .productoDesss img,
+  .imagen-producto-destacado {
+    height: 200px !important;
+  }
 
   .btn-detallehome {
     width: 100% !important;
