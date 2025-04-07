@@ -436,14 +436,14 @@ img {
 /* INICIA CODIGO PARA "Productos Destacados" */
 
 .productoDesss {
-  width: 150vw !important;
+  width: 98vw !important;
   height: auto !important;
   padding: 12px;
 }
 
 .productoDesss img,
 .imagen-producto-destacado {
-  height: 180px !important;
+  height: 200px !important;
 }
 
   .btn-detallehome {
