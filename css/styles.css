@@ -458,7 +458,7 @@ img {
 
     .swiper-button-prev::after,
   .swiper-button-next::after {
-    font-size: 20px !important;  /* 🔹 cambia el tamaño del icono */
+    font-size: 24px !important;  /* 🔹 cambia el tamaño del icono */
   }
 
   .swiper-button-prev,
@@ -468,11 +468,11 @@ img {
   }
   
   .swiper-button-prev {
-    left: -10px;
+    left: -11px;
   }
 
   .swiper-button-next {
-    right: -10px;
+    right: -11px;
   }
   
   /* TERMINA CODIGO PARA "Productos Destacados" */
