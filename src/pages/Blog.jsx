@@ -8,6 +8,7 @@ const Blog = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const base = import.meta.env.BASE_URL;
+  const isMobile = window.innerWidth <= 600;
 
   const images = [
     "salina1.jpg", "salina2.jpg", "salina3.jpg", "salina4.jpg",
@@ -40,14 +41,9 @@ const Blog = () => {
           <div className="blog-text">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            
-            <a
-              href={`/AguasMarinas/${item.url}`}
-              className="view-store-button"
-            >
+            <a href={`/AguasMarinas/${item.url}`} className="view-store-button">
               Ver en Tienda
             </a>
-
           </div>
         </div>
       ))}
@@ -55,7 +51,10 @@ const Blog = () => {
       <div className="blog-section">
         <div className="blog-text">
           <h2>Proceso de Producción en Nuestras Salinas</h2>
-          <button className="accordion-buttonblog" onClick={() => setShowGallery(!showGallery)}>
+          <button
+            className="accordion-buttonblog"
+            onClick={() => setShowGallery(!showGallery)}
+          >
             {showGallery ? "Ocultar Imágenes" : "Ver Imágenes"}
           </button>
         </div>
@@ -64,9 +63,25 @@ const Blog = () => {
       {showGallery && (
         <div className="salina-gallery">
           <div className="salina-image-container">
-            <button className="arrow-button" onClick={() => setCurrentImage((currentImage - 1 + images.length) % images.length)}>←</button>
-            <img className="salina-img" src={images[currentImage]} alt={`Salina ${currentImage + 1}`} />
-            <button className="arrow-button" onClick={() => setCurrentImage((currentImage + 1) % images.length)}>→</button>
+            <button
+              className="arrow-button"
+              onClick={() =>
+                setCurrentImage((currentImage - 1 + images.length) % images.length)
+              }
+            >
+              ←
+            </button>
+            <img
+              className="salina-img"
+              src={images[currentImage]}
+              alt={`Salina ${currentImage + 1}`}
+            />
+            <button
+              className="arrow-button"
+              onClick={() => setCurrentImage((currentImage + 1) % images.length)}
+            >
+              →
+            </button>
           </div>
         </div>
       )}
@@ -74,36 +89,58 @@ const Blog = () => {
       <div className="blog-section video-section">
         <h5>Videos del Proceso de Producción</h5>
         <div className="video-containerBLOG">
-          <button className="arrow-buttonBLOG left-arrowBLOG" onClick={() => setCurrentVideo((currentVideo - 1 + videos.length) % videos.length)}>←</button>
+          <button
+            className="arrow-buttonBLOG left-arrowBLOG"
+            onClick={() =>
+              setCurrentVideo((currentVideo - 1 + videos.length) % videos.length)
+            }
+          >
+            ←
+          </button>
           <div className="video-wrapper">
-            <video key={currentVideo} width="100%" controls autoPlay muted loop>
+            <video
+              key={currentVideo}
+              width="100%"
+              controls
+              muted
+              loop
+              playsInline
+              autoPlay={!isMobile}
+            >
               <source src={videos[currentVideo]} type="video/mp4" />
               Tu navegador no soporta la reproducción de videos.
             </video>
           </div>
-          <button className="arrow-buttonBLOG right-arrowBLOG" onClick={() => setCurrentVideo((currentVideo + 1) % videos.length)}>→</button>
+          <button
+            className="arrow-buttonBLOG right-arrowBLOG"
+            onClick={() =>
+              setCurrentVideo((currentVideo + 1) % videos.length)
+            }
+          >
+            →
+          </button>
         </div>
       </div>
-      {/* Sección de Datos Curiosos */}
+
       <div className="blog-section curious-facts">
         <h5 className="curious-facts-title">Datos Curiosos</h5>
         <div className="curious-facts-container">
           <div className="curious-fact-box">
             <h3>Usos de la Sal</h3>
             <p>
-              La sal tiene una variedad de usos, desde la conservación de alimentos hasta la fabricación de productos químicos. Es fundamental en la industria alimentaria, además de ser utilizada en el tratamiento de agua y en procesos industriales.
+              La sal tiene una variedad de usos, desde la conservación de alimentos hasta la fabricación de productos químicos...
             </p>
           </div>
           <div className="curious-fact-box">
             <h3>Beneficios para la Salud</h3>
             <p>
-              La sal es esencial para el equilibrio de los líquidos en el cuerpo y el buen funcionamiento de los nervios y músculos. La sal yodada es particularmente importante para prevenir problemas de tiroides.
+              La sal es esencial para el equilibrio de los líquidos en el cuerpo y el buen funcionamiento de los nervios y músculos...
             </p>
           </div>
           <div className="curious-fact-box">
             <h3>Proceso de Producción</h3>
             <p>
-              El proceso de producción de la sal comienza con la recolección de agua de mar, que luego se deja evaporar en salinas naturales. Este proceso permite obtener cristales de sal pura que se utilizan en diferentes industrias y aplicaciones.
+              El proceso de producción de la sal comienza con la recolección de agua de mar, que luego se deja evaporar en salinas naturales...
             </p>
           </div>
         </div>
@@ -111,6 +148,5 @@ const Blog = () => {
     </div>
   );
 };
-    
 
 export default Blog;
