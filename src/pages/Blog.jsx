@@ -16,11 +16,20 @@ const Blog = () => {
     "salina9.jpg", "salina10.jpg", "salina11.jpg", "salina12.jpg"
   ].map(img => base + "img/" + img);
 
-  const videos = [
-    "produccion1.mp4", "produccion2.mp4", "produccion3.mp4",
-    "produccion4.mp4", "produccion5.mp4", "produccion6.mp4",
-    "produccioon7.mp4", "produccion8.mp4"
-  ].map(v => base + "videos/" + v);
+const videos = [
+  "produccion1.mp4",
+  "produccion2.mp4",
+  "produccion3.mp4",
+  "produccion4.mp4",
+  "produccion5.mp4",
+  "produccion6.mp4",
+  "produccioon7.mp4",
+  "produccion8.mp4"
+].map(name => ({
+  src: base + "videos/" + name,
+  poster: base + "posters/" + name.replace(".mp4", ".jpg") // 👈 cambia extensión
+}));
+
 
   const productos = [
     { img: "salindustrial.jpg", alt: "Sal Industrial", title: "Sal Industrial", desc: "La sal industrial es utilizada en múltiples aplicaciones...", url: "salindustrial.html" },
@@ -105,9 +114,9 @@ const Blog = () => {
               muted
               loop
               playsInline
-              poster={videos[currentVideo] + "#t=5"}
+              poster={videos[currentVideo].poster} 
             >
-              <source src={videos[currentVideo]} type="video/mp4" />
+              <source src={videos[currentVideo].src + "#t=0.1"} type="video/mp4" />
               Tu navegador no soporta la reproducción de videos.
             </video>
           </div>
