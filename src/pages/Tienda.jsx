@@ -6,7 +6,7 @@ const productos = [
   { nombre: "Sal de Ganado", categorias: ["Saco"], url: "salganado.html" },
   { nombre: "Sal Refinada Tipo B", categorias: ["Saco"], url: "salrefinadatipob.html" },
   { nombre: "Sal Refinada 'La Fina'", categorias: ["Empacada", "Saco"], url: "salrefinadalafina.html" },
-  { nombre: "Sal Yodada Artesana", categorias: ["Empacada"], url: "salyodadaartesana.html" }
+  { nombre: "Sal Yodada Artesanal", categorias: ["Empacada"], url: "salyodadaartesana.html" }
 ];
 
 const Tienda = () => {
