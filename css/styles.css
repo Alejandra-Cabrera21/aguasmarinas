@@ -577,6 +577,18 @@ img {
     margin-top: 5px;
     padding: 10px;
   }
+
+    .arrow-button {
+    font-size: 14px !important;
+    padding: 4px 8px !important;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .salina-img {
+    width: 85vw;
+  }
 }
 
 
