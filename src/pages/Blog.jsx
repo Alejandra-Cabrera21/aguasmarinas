@@ -105,7 +105,7 @@ const Blog = () => {
               muted
               loop
               playsInline
-              autoPlay={!isMobile}
+              poster={videos[currentVideo] + "#t=0.1"}
             >
               <source src={videos[currentVideo]} type="video/mp4" />
               Tu navegador no soporta la reproducción de videos.
