@@ -105,7 +105,7 @@ const Blog = () => {
               muted
               loop
               playsInline
-              poster={videos[currentVideo] + "#t=0.1"}
+              poster={videos[currentVideo] + "#t=5"}
             >
               <source src={videos[currentVideo]} type="video/mp4" />
               Tu navegador no soporta la reproducción de videos.
