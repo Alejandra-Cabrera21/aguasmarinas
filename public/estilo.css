@@ -579,8 +579,8 @@ img {
     padding: 10px;
   }
   
-  .arrow-button {
-    font-size: 12px !important;
+    .arrow-button {
+    font-size: 14px !important;
     padding: 4px 8px !important;
     border-radius: 6px;
     width: 30px;
@@ -588,7 +588,7 @@ img {
   }
 
   .salina-img {
-    width: 85vw;
+    width: 60vw;
   }
 }
 
