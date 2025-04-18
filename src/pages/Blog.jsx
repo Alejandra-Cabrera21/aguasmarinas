@@ -50,7 +50,7 @@ const videos = [
           <div className="blog-text">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <a href={item.url} className="view-store-button">
+            <a href={`/${item.url}`} className="view-store-button">
 
               Ver en Tienda
             </a>
